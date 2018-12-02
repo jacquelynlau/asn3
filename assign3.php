@@ -22,12 +22,14 @@
 
 
 
-<?php
-	include "getcustomers.php";
-?>
+
 
   <form action = "getproducts1.php" method = "post">
 
+	<?php
+			include "getcustomers.php";
+	?>
+	
 	<input type = "submit" value = "Get Purchases">
 
   </form>

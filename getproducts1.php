@@ -22,7 +22,7 @@
 
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<li>';
-			echo $row["quantity"] . " " . $row["description"];
+			echo $row["productID"] . " " . $row["customerID"];
 			echo '</li>';
 		}
 		mysqli_free_result($result);
