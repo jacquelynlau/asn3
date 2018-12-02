@@ -1,22 +1,22 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title> Store Database </title> 
-	<link rel="stylesheet" type="text/css" href="style.css"> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Store Database </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
-</head> 
-<body> 
+</head>
+<body>
 
 <?php
-	include "connecttodb.php"; 
-?> 
+	include "connecttodb.php";
+?>
 
-<h1> Assignment 3 Database </h1> 
+<h1> Assignment 3 Database </h1>
 
 
-</div> 
+</div>
 
-<div class ="main"> 
+<div class ="main">
 
 </div>
 
@@ -24,14 +24,15 @@
 
 <?php
 	include "getcustomers.php";
-?> 
+	include "reorderproducts.php";
+?>
 
   <form action = "getproducts.php" method = "post">
 
 	<input type = "submit" value = "Get Purchases">
 
-  </form> 
+  </form>
 
 
-</body> 
-</html> 
+</body>
+</html>
