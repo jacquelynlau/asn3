@@ -23,6 +23,7 @@
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<li>';
 			echo $row["description"];
+			echo '</li>';
 		}
 		mysqli_free_result($result);
 		?>
