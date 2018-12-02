@@ -5,11 +5,11 @@
   include 'connecttodb.php';
 ?>
 
-<form action = "#" method = "post">
+<form method="post" action="reorderproducts.php">
 <!-- organize by ascending or descending order button -->
 <select name = "order">
-  <option value = "ascending"> Ascending </option>
-  <option value = "descending"> Descending </option>
+  <option value = "ASC"> Ascending </option>
+  <option value = "DESC"> Descending </option>
 </select>
 
 <!-- organize by price or name button -->
