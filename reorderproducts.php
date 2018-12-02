@@ -24,21 +24,17 @@
 
 <?php
     if (isset($_POST["submit"])) {
-      $query = 'SELECT * FROM Product ORDER BY '. $_POST["order"] . ''. $_POST["type"];
+      $query = 'SELECT * from products ORDER BY ' . $_POST["order"] . ' ' . $_POST["type"];
       $result = mysqli_query($connection,$query);
       if (!$result) {
           die("databases query failed.");
       }
+
       while ($row = mysqli_fetch_assoc($result)) {
           echo '<li>' . $row["productID"] . ' ' . $row["description"] . ' ' . $row["costPerItem"] . ' ' . $row["quantity"];
                   }
                   mysqli_free_result($result);
-                }
+            }
 ?>
-
-
-
-
-
 
 </html>
