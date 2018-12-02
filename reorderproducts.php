@@ -5,7 +5,7 @@
   include 'connecttodb.php';
 ?>
 
-<form method="post" action="reorderproducts.php">
+<form method="post" action="assign3.php">
 <!-- organize by ascending or descending order button -->
 <select name = "order">
   <option selected = "selected" value = "ASC"> Ascending </option>
@@ -19,7 +19,7 @@
 </select>
 
 <!-- reorder the products button -->
-<input name = "submit" type = "submit" value = "Reorder Table"/>
+<input type = "submit" value = "Reorder Table"/>
 
 
 <?php
