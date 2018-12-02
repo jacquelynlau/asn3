@@ -12,7 +12,8 @@
 	<ol>
 		<?php
 		$whichCustomer = $_POST["customer"];
-		$query = 'SELECT description, quantityPurchased FROM CustomerPurchases c INNER JOIN Purchases b INNER JOIN Product a ON c.customerID = b.customerID AND b.productID = a.productID WHERE b.customerID"'.$whichCustomer.'"';
+		$query = 'SELECT * FROM Purchases, Product WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichCustomer.'"';
+
 
 
 		$result = mysqli_query($connection,$query);
