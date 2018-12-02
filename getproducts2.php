@@ -1,7 +1,12 @@
 <?php
   	$query = "SELECT * FROM Product ORDER BY description ASC";
-  	$result = mysqli_query($connection,$query);
- 	if (!$result) {
+    if(isset($_POST["type"]) && isset($_POST["order"])) {
+      $query = "SELECT * FROM product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
+    }
+
+  $result = mysqli_query($connection,$query);
+
+  if (!$result) {
         	die("databases query failed.");
  	}
 
@@ -21,12 +26,7 @@
 		echo "<td>" . $row["quantity"] . "</td>";
 		echo "</tr>";
 	}
+  
 	echo "</table>";
-
 	mysqli_free_result($result);
-?>
-
-
-
-
 ?>
