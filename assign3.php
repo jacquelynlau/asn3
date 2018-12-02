@@ -26,7 +26,7 @@
 	include "getcustomers.php";
 ?>
 
-  <form action = "getproducts.php" method = "post">
+  <form action = "getproducts1.php" method = "post">
 
 	<input type = "submit" value = "Get Purchases">
 
