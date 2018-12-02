@@ -20,11 +20,11 @@
 
 <!-- reorder the products button -->
 <input name = "submit" type = "submit" value = "Reorder Table"/>
-</form> 
+</form>
 
 <?php
     if (isset($_POST["submit"])) {
-      $query = 'SELECT * FROM Product ORDER BY '. $_POST["type"] . ''. $_POST["order"];
+      $query = 'SELECT * FROM Product ORDER BY '. $_POST["order"] . ''. $_POST["type"];
       $result = mysqli_query($connection,$query);
       if (!$result) {
           die("databases query failed.");

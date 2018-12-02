@@ -1,5 +1,5 @@
 <?php
-  include 'connecttodb.php';
+    include 'connecttodb.php';
   	$query = "SELECT * FROM Customer GROUP BY lastName;";
   	$result = mysqli_query($connection,$query);
  	if (!$result) {
