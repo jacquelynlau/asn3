@@ -31,7 +31,7 @@
 			die("database query2 failed.");
 		}
 		mysqli_free_result($result);
-	}
+
 		?>
 	</ol>
 	<?php
