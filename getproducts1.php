@@ -24,7 +24,7 @@
 
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<li>';
-			echo $row["description"] . " " . $row["quantityPurchased"];
+			echo $row["description"];
 			echo '</li>';
 		}
 		mysqli_free_result($result);
