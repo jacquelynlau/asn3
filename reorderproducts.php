@@ -5,21 +5,35 @@
   include 'connecttodb.php';
 ?>
 
-<!-- organize by ascending or descending order -->
+<!-- organize by ascending or descending order button -->
 <select name = "order">
   <option selected = "select" values = "ascending"> Ascending </option>
   <option value = "descending"> Descending </option>
 </select>
 
-<!-- organize by price or name -->
+<!-- organize by price or name button -->
 <select name = "type">
   <option selected = "select" value = "price"> Price </option>
   <option value = "name"> Name </option>
 </select>
 
-<!-- reorder the products -->
-<input type = "submit" value = "Reorder Table"/>
+<!-- reorder the products button -->
+<input name = "submit" type = "submit" value = "Reorder Table"/>
 
+<?php
+
+    if (isset($_POST["submit"])) {
+      $query = 'SELECT * FROM Product ORDER BY '. $_POST["type"] . ''. $_POST["order"];
+      $result = mysqli_query($connection,$query);
+      if (!$result) {
+          die("databases query failed.");
+      }
+      while ($row = mysqli_fetch_assoc($result)) {
+          echo '<li>' . $row["productID"] . ' ' . $row["description"] . ' ' . $row["costPerItem"] . ' ' . $row["quantity"];
+                  }
+                  mysqli_free_result($result);
+                }
+?>
 
 
 
