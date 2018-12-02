@@ -12,7 +12,7 @@
 	<ol>
 		<?php
 		$whichCustomer = $_POST["customer"];
-		$query = 'SELECT * FROM Purchases, Product WHERE Product.productID = Purchases.productID AND Product.productID="'.$whichOwner.'"';
+		$query = 'SELECT description, quantityPurchased FROM CustomerPurchases c INNER JOIN Purchases b INNER JOIN Product a ON c.customerID = b.customerID AND b.productID = a.productID WHERE b.customerID"'.$whichCustomer.'"';
 
 
 		$result = mysqli_query($connection,$query);
@@ -22,7 +22,7 @@
 
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<li>';
-			echo $row["productID"] . " " . $row["customerID"];
+			echo $row["description"] . " " . $row["quantityPurchased"];
 			echo '</li>';
 		}
 		mysqli_free_result($result);
