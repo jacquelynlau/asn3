@@ -1,25 +1,25 @@
-<?php 
+<?php
   	$query = "SELECT * FROM Customer GROUP BY lastName;";
   	$result = mysqli_query($connection,$query);
  	if (!$result) {
-        	die("databases query failed.");	
+        	die("databases query failed.");
  	}
 
-	echo "Who are you looking up? </br>";	
+	echo "Who are you  up? </br>";	
 	echo "<table border = '1'>
-	<tr> 
+	<tr>
 	<th> Select: </th>
-	<th> Cusomter ID </th>  
+	<th> Cusomter ID </th>
 	<th> First Name </th>
-	<th> Last Name </th> 
-	<th> Phone Number </th> 
-	<th> City </th> 
+	<th> Last Name </th>
+	<th> Phone Number </th>
+	<th> City </th>
 	<th> Agent ID </th>
 	</tr>";
 
-	while ($row = mysqli_fetch_assoc($result)) { 
+	while ($row = mysqli_fetch_assoc($result)) {
 		echo '<tr><td><input type = "radio" name = "customer" value = "';
-		echo "<td>".$row ["customerID"]."</td>"; 
+		echo "<td>".$row ["customerID"]."</td>";
 		echo '"></td><td>'. $row["customerID"] . "</td>";
 		echo "<td>" . $row["firstName"] . "</td>";
 		echo "<td>" . $row["lastName"] . "</td>";
@@ -30,11 +30,5 @@
 	}
 	echo "</table>";
 
-	mysqli_free_result($result); 
+	mysqli_free_result($result);
 ?>
-
-
-
-
-
-
