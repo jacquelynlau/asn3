@@ -33,6 +33,7 @@
   </form>
 
 <?php
+		include "getproducts2.php";
 		include "reorderproducts.php";
 ?>
 
