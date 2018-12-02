@@ -11,9 +11,12 @@
 
 	<ol>
 		<?php
-		if (isset($_POST["submit"])) {
+		echo $_POST["customer"];
 		$whichCustomer = $_POST["customer"];
-		$query = 'SELECT * FROM Purchases, Product WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichCustomer.'"';
+		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
+
+
+		WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichCustomer.'"';
 
 		$result = mysqli_query($connection,$query);
 		while ($row=mysqli_fetch_assoc($result)) {
