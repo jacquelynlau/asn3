@@ -5,6 +5,7 @@
   include 'connecttodb.php';
 ?>
 
+<form action = "#" method = "post">
 <!-- organize by ascending or descending order button -->
 <select name = "order">
   <option selected = "select" values = "ascending"> Ascending </option>
@@ -19,9 +20,9 @@
 
 <!-- reorder the products button -->
 <input name = "submit" type = "submit" value = "Reorder Table"/>
+</form> 
 
 <?php
-
     if (isset($_POST["submit"])) {
       $query = 'SELECT * FROM Product ORDER BY '. $_POST["type"] . ''. $_POST["order"];
       $result = mysqli_query($connection,$query);
