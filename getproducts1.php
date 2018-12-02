@@ -11,6 +11,7 @@
 
 	<ol>
 		<?php
+		if (isset($_POST["submit"])) {
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Purchases, Product WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichCustomer.'"';
 
@@ -27,6 +28,7 @@
 			echo '</li>';
 		}
 		mysqli_free_result($result);
+	}
 		?>
 	</ol>
 	<?php
