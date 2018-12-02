@@ -24,7 +24,7 @@
 
 <?php
     if (isset($_POST["submit"])) {
-      $query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["type"];
+      $query = 'SELECT * FROM Product ORDER BY ' . $_POST["type"] . ' ' . $_POST["order"];
       $result = mysqli_query($connection,$query);
       if (!$result) {
           die("databases query failed.");
