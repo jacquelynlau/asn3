@@ -15,9 +15,6 @@
 		$query = 'SELECT * FROM Purchases, Product WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichOwner.'"';
 
 
-
-
-
 		$result = mysqli_query($connection,$query);
 		if (!$result) {
 			die("database query2 failed.");

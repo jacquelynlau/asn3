@@ -3,10 +3,10 @@
   	$query = "SELECT * FROM Customer GROUP BY lastName;";
   	$result = mysqli_query($connection,$query);
  	if (!$result) {
-        	die("databases query failed.");
+        	die("databases query failed");
  	}
 
-	echo "Who are you looking up? </br>";
+	echo "Select the customer you are looking up: </br>";
 	echo "<table border = '1'>
 	<tr>
 	<th> Select: </th>
@@ -30,6 +30,6 @@
 		echo "</tr>";
 	}
 	echo "</table>";
-
 	mysqli_free_result($result);
+  mysqli_close($connection);
 ?>
