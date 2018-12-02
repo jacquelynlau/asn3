@@ -13,7 +13,7 @@
 		<?php
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Customer, Product WHERE Product.customerID = Customer.customerID AND Product.customerID="'.$whichOwner.'"';
-		
+
 
 
 
