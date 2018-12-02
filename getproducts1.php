@@ -12,7 +12,7 @@
 	<ol>
 		<?php
 		$whichCustomer = $_POST["customer"];
-		$query = 'SELECT * FROM Purchases, Product WHERE Product.customerID = Purchases.customerID AND Product.customerID="'.$whichOwner.'"';
+		$query = 'SELECT * FROM Purchases, Product WHERE Product.productID = Purchases.productID AND Product.productID="'.$whichOwner.'"';
 
 
 		$result = mysqli_query($connection,$query);
