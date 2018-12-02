@@ -5,7 +5,7 @@
         	die("databases query failed.");
  	}
 
-	echo "Who are you  up? </br>";	
+	echo "Who are you looking up? </br>";	
 	echo "<table border = '1'>
 	<tr>
 	<th> Select: </th>
