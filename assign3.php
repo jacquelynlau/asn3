@@ -24,7 +24,6 @@
 
 <?php
 	include "getcustomers.php";
-	include "reorderproducts.php";
 ?>
 
   <form action = "getproducts.php" method = "post">
@@ -32,6 +31,10 @@
 	<input type = "submit" value = "Get Purchases">
 
   </form>
+
+<?php
+		include "reorderproducts.php";
+?>
 
 
 </body>
