@@ -8,13 +8,13 @@
 <form action = "#" method = "post">
 <!-- organize by ascending or descending order button -->
 <select name = "order">
-  <option selected = "select" values = "ascending"> Ascending </option>
+  <option value = "ascending"> Ascending </option>
   <option value = "descending"> Descending </option>
 </select>
 
 <!-- organize by price or name button -->
 <select name = "type">
-  <option selected = "select" value = "price"> Price </option>
+  <option value = "price"> Price </option>
   <option value = "name"> Name </option>
 </select>
 
