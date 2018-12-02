@@ -1,11 +1,12 @@
 <?php
+  include 'connecttodb.php';
   	$query = "SELECT * FROM Customer GROUP BY lastName;";
   	$result = mysqli_query($connection,$query);
  	if (!$result) {
         	die("databases query failed.");
  	}
 
-	echo "Who are you looking up? </br>";	
+	echo "Who are you looking up? </br>";
 	echo "<table border = '1'>
 	<tr>
 	<th> Select: </th>
