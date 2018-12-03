@@ -2,6 +2,7 @@
     include 'connecttodb.php';
   	$query = "SELECT * FROM Customer GROUP BY lastName;";
   	$result = mysqli_query($connection,$query);
+
  	if (!$result) {
         	die("databases query failed");
  	}
@@ -19,15 +20,21 @@
 	</tr>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
-		echo '<tr><td><input type = "radio" name = "customer" value = "';
-		echo "<td>".$row ["customerID"]."</td>";
-		echo '"></td><td>'. $row["customerID"] . "</td>";
-		echo "<td>" . $row["firstName"] . "</td>";
-		echo "<td>" . $row["lastName"] . "</td>";
-		echo "<td>" . $row["phoneNumber"] . "</td>";
-		echo "<td>" . $row["city"] . "</td>";
-		echo "<td>" . $row["agentID"] . "</td>";
-		echo "</tr>";
+
+    echo '<input type="radio" name="customername" value="';
+           echo $row["CustomerID"];
+           echo '">'. $row["firstName"]. " " .$row["lastName"];
+
+
+		//echo '<input type = "radio" name = "customername" value = "';
+		//echo "<td>".$row ["customerID"]."</td>";
+		//echo '"></td><td>'. $row["customerID"] . "</td>";
+		//echo "<td>" . $row["firstName"] . "</td>";
+		//echo "<td>" . $row["lastName"] . "</td>";
+		//echo "<td>" . $row["phoneNumber"] . "</td>";
+		//echo "<td>" . $row["city"] . "</td>";
+		//echo "<td>" . $row["agentID"] . "</td>";
+		//echo "</tr>";
 	}
 	echo "</table>";
 	mysqli_free_result($result);
