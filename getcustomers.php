@@ -10,7 +10,7 @@
 	echo "Select the customer you are looking up: </br>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
-    echo "<li>";
+    echo "<ul>";
     echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
@@ -18,10 +18,11 @@
            echo "Customer ID: " . $row["customerID"];
            echo "<br>";
            echo "Phone Number: " . $row["phoneNumber"];
-
-
-
-    echo "</li>";
+           echo "<br>";
+           echo "City: " . $row["city"];
+           echo "<br>";
+           echo "Agent ID: " . $row["agentID"];
+    echo "</ul>";
 
 		//echo '<input type = "radio" name = "customername" value = "';
 		//echo "<td>".$row ["customerID"]."</td>";
