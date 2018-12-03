@@ -10,7 +10,7 @@
 	echo "Select the customer you are looking up: </br>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
-    echo ''<ul style="list-style-type:none">'';
+    echo "<ul style="list-style-type:none">";
       echo "<li>";
       echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
