@@ -6,7 +6,7 @@
 	include 'connecttodb.php';
 	?>
 
-	<h1> Here are the Purchases: </h1>
+	<h1> Here are the purchases: </h1>
 
 
 	<ol>
@@ -17,7 +17,6 @@
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<p>';
 			echo "". $row["quantity"]. " " .$row["description"];
-			//echo $row["description"];
 			echo '</p>';
 		}
 
