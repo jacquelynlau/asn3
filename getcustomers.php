@@ -23,18 +23,7 @@
            echo "<br>";
            echo "Agent ID: " . $row["agentID"];
     echo "</ul>";
-
-		//echo '<input type = "radio" name = "customername" value = "';
-		//echo "<td>".$row ["customerID"]."</td>";
-		//echo '"></td><td>'. $row["customerID"] . "</td>";
-		//echo "<td>" . $row["firstName"] . "</td>";
-		//echo "<td>" . $row["lastName"] . "</td>";
-		//echo "<td>" . $row["phoneNumber"] . "</td>";
-		//echo "<td>" . $row["city"] . "</td>";
-		//echo "<td>" . $row["agentID"] . "</td>";
-		//echo "</tr>";
 	}
-	echo "</table>";
 	mysqli_free_result($result);
   mysqli_close($connection);
 ?>
