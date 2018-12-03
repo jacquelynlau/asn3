@@ -11,7 +11,7 @@
 
 	<ol>
 		<?php
-		$whichCustomer = $_POST["customer"];
+		$whichCustomer = $_POST["customername"];
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
 		$result = mysqli_query($connection,$query);
 		while ($row=mysqli_fetch_assoc($result)) {
