@@ -15,8 +15,10 @@
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
            echo "<br>";
+           echo "Customer ID: " . $row["customerID"];
+           echo "<br>";
            echo "Phone Number: " . $row["phoneNumber"];
-           
+
 
 
     echo "</li>";
