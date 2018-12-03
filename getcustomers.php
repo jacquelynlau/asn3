@@ -13,7 +13,8 @@
     echo "<li>";
     echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
-           echo '">'. $row["firstName"]. " " .$row["lastName"];
+           echo '">'. $row["firstName"]. " " .$row["lastName"] "-";
+
     echo "</li>";
 
 		//echo '<input type = "radio" name = "customername" value = "';
