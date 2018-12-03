@@ -6,21 +6,19 @@
 	include 'connecttodb.php';
 	?>
 
-	<h1> Here are the </h1>
+	<h1> Here are the Purchases: </h1>
 
 
 	<ol>
 		<?php
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
-
 		$result = mysqli_query($connection,$query);
 		while ($row=mysqli_fetch_assoc($result)) {
-			echo '<li>';
+			echo '<p>';
 			echo $row["description"];
-			echo '</li>';
+			echo '</p>';
 		}
-
 
 
 		if (!$result) {
