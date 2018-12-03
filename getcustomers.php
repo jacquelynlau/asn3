@@ -11,7 +11,6 @@
 
 	while ($row = mysqli_fetch_assoc($result)) {
     echo "<ul style="list-style-type:none">";
-      echo "<li>";
       echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
@@ -21,7 +20,6 @@
            echo $row["city"];
            echo "<br>";
            echo $row["agentID"];
-      echo "</li>";
     echo "</ul";
 		//echo '<input type = "radio" name = "customername" value = "';
 		//echo "<td>".$row ["customerID"]."</td>";
