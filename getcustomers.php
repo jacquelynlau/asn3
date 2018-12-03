@@ -15,7 +15,7 @@
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
            echo "<br>";
-           echo "Phone Number:" . $row["phoneNumber"];
+           echo "Phone Number: " . $row["phoneNumber"];
            echo " - ";
            //echo $row["phoneNumber"];
 
