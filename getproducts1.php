@@ -16,7 +16,7 @@
 		$result = mysqli_query($connection,$query);
 		while ($row=mysqli_fetch_assoc($result)) {
 			echo '<p>';
-			echo '">'. $row["quantity"]. " " .$row["description"];
+			echo "". $row["quantity"]. " " .$row["description"];
 			//echo $row["description"];
 			echo '</p>';
 		}
