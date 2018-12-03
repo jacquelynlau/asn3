@@ -11,16 +11,13 @@
 
 	while ($row = mysqli_fetch_assoc($result)) {
     echo "<li>";
-      echo '<input type="radio" name="customer" value="';
+    echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
-           echo "<br>";
+           echo "<br>"
            echo $row["phoneNumber"];
-           echo "<br>";
-           echo $row["city"];
-           echo "<br>";
-           echo $row["agentID"];
-    echo "</li";
+    echo "</li>";
+
 		//echo '<input type = "radio" name = "customername" value = "';
 		//echo "<td>".$row ["customerID"]."</td>";
 		//echo '"></td><td>'. $row["customerID"] . "</td>";
