@@ -6,12 +6,13 @@
 	include 'connecttodb.php';
 	?>
 
-	<h1> Here are their purchases: </h1>
+	<h1> Here are the </h1>
 
 
 	<ol>
 		<?php
-		echo $_POST["customer"];
+		echo <h1> Here are the purchases oh $_POST["customer"]; </h1>
+		
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
 
