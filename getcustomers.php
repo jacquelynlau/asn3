@@ -17,7 +17,7 @@
            echo "<br>";
            echo "Phone Number: " . $row["phoneNumber"];
            echo " - ";
-           //echo $row["phoneNumber"];
+           echo $row["phoneNumber"];
 
     //echo "</li>";
 
