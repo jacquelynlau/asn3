@@ -8,16 +8,6 @@
  	}
 
 	echo "Select the customer you are looking up: </br>";
-	echo "<table border = '1'>
-	<tr>
-	<th> Select: </th>
-	<th> Cusomter ID </th>
-	<th> First Name </th>
-	<th> Last Name </th>
-	<th> Phone Number </th>
-	<th> City </th>
-	<th> Agent ID </th>
-	</tr>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
     echo "<li>";
