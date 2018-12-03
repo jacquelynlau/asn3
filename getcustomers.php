@@ -14,8 +14,10 @@
     echo '<input type="radio" name="customer" value="';
            echo $row["customerID"];
            echo '">'. $row["firstName"]. " " .$row["lastName"];
+           echo "<br>";
+           echo "Phone Number:" $row["phoneNumber"];
            echo " - ";
-           echo $row["phoneNumber"];
+           //echo $row["phoneNumber"];
 
     echo "</li>";
 
