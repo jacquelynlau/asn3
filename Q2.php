@@ -1,8 +1,12 @@
 <?php
+
+
+   include 'connecttodb.php';
    $query = "SELECT * FROM Product ORDER BY description ASC";//default setting
    if(isset($_POST["type"]) && isset($_POST["order"])){//if the user chooses, get new ordering
    $query = "SELECT * FROM product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
    }
+
    $result = mysqli_query($connection,$query);
 
    if (!$result) {
