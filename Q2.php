@@ -1,4 +1,5 @@
 <?php
+   include 'connecttodb.php';
 
    if(isset($_POST["submit"]) && (isset($_POST["price"]) && isset($_POST["ascending"])){//if the user chooses, get new ordering
    $query = "SELECT * FROM Product ORDER BY " . $_POST["price"] . " " . $_POST["ascending"] ;
@@ -11,7 +12,7 @@
    echo "</br>So many products</br>";
    echo "<table align='center'>";
    echo "<th>Product Name</th>";
-   echo	"<th>Price</th>";			//create a table 
+   echo	"<th>Price</th>";			//create a table
    echo	"<th>Quantity Left</th>";
    while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
