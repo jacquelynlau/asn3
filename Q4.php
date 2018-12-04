@@ -30,7 +30,7 @@
     $customerLName = $_POST["lastname"];
     $customerCity = $_POST["city"];
     $query = "INSERT INTO Customer VALUES ('$customerFName', '$customerLName',
-          '$customerCity', '$customerPhone', '$customerID', '$customerAgent')";
+          '$customerCity', '$customerID')";
 
       $result = mysqli_query($connection,$query);
 
