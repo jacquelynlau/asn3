@@ -2,7 +2,7 @@
 
   include 'connecttodb.php';
 
-  if(isset($_POST["type"]) && isset($_POST["order"])){
+  if (isset($_POST["reorder"])){
    $query = 'SELECT * from products ORDER BY ' . $_POST["type"] . ' ' . $_POST["order"];
    }
 
