@@ -2,7 +2,7 @@
 <!-- this is like the index file -->
 <html>
 <head>
-	<title> Store Database </title>
+	<title> 3319 A3 Store Database </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
 </head>
@@ -42,7 +42,37 @@
 
 		<!-- submit button to reorde -->
 		<input type = "submit" value= "Submit">
+</form>
+
+<!-- Q3 -->
+<p> 3. Insert a new purchase: </p>
+
+<form action = "Q3.php" method = "post">
+		<p> Select the customer: </p>
+		<?php>
+		$query = 'SELECT * FROM Customer';
+		//$result = mysqli_query($connection, $query);
+		while ($row = mysqli_fetch_assoc($result)) {
+	    echo "<ul>";
+	    echo '<input type="radio" name="customer" value="';
+	           echo $row["customerID"];
+	           echo '">'. $row["firstName"]. " " .$row["lastName"];
+	           echo "<br>";
+	           echo "Customer ID: " . $row["customerID"];
+	           echo "<br>";
+	           echo "Phone Number: " . $row["phoneNumber"];
+	           echo "<br>";
+	           echo "City: " . $row["city"];
+	           echo "<br>";
+	           echo "Agent ID: " . $row["agentID"];
+	    echo "</ul>";
+
+
+
+		?>
 
 </form>
+
+
 </body>
 </html>
