@@ -29,7 +29,7 @@
 <!-- Q2 -->
 <p> Select how you want to order the product: </p>
 
-<form action= "reorder.php" method= "post">
+<form action= "Q2.php" method= "post">
 
 	<input type = "radio" name = "ascending" value = "ASC"> Ascending <br>
 	<input type = "radio" name = "descending" value = "DESC"> Descending <br>
