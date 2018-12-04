@@ -2,9 +2,9 @@
 
    include 'connecttodb.php';
 
-
+   $query = "SELECT * FROM product ORDER BY description ASC";
    if(isset($_POST["reorder"]) && (isset($_POST["price"]) && isset($_POST["descending"])){//if the user chooses, get new ordering
-   $query = "SELECT * FROM Product ORDER BY " . $_POST["price"] . " " . $_POST["descending"]
+   $query = "SELECT * FROM Product ORDER BY " . $_POST["price"] . " " . $_POST["descending"];
    }
    $result = mysqli_query($connection,$query);
 
