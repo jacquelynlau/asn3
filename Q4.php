@@ -23,6 +23,10 @@
 
 
   else {
+    $customerID = $_POST["customerID"];
+    $customerFName = $_POST["firstname"];
+    $customerLName = $_POST["lastname"];
+    $customerCity = $_POST["city"];
     $query = "INSERT INTO Customer VALUES ('$customerID', '$customerFName', '$customerLName', '$customerCity')";
 
     $insert_result = mysqli_query($connection, $query);
