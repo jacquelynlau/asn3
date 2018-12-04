@@ -162,7 +162,7 @@ mysqli_close($connection);
 <!-- enter the quantity -->
 <input type="text" name="phonenumber5" placeholder="Enter Phone Number">
 <br>
-<br>
+
 
 <!-- submit button to add new purchase -->
 <input name = "submit5" type = "submit" value = "Update Phone Number">
