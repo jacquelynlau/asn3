@@ -32,7 +32,7 @@
 
 <form action= "Q2.php" method= "post">
 
-		<p> Select which order you want: </p>
+		<p> Select if you want to ascending order or descending order: </p>
 		<input type = "radio" name = "ascending" value = "ASC"> Ascending <br>
 		<input type = "radio" name = "descending" value = "DESC"> Descending <br>
 
