@@ -23,20 +23,24 @@
 		<?php
 				include "getcustomers.php";
 		?>
-				<input type = "submit" value = "Get Purchases">
+				<!-- submit button to get purchases  -->
+		<input type = "submit" value = "Get Purchases">
 </form>
 
 <!-- Q2 -->
-<p> Select how you want to order the product: </p>
+<p> How do you want to order the products? </p>
 
 <form action= "Q2.php" method= "post">
 
+		<p> Select which order you want: </p>
 		<input type = "radio" name = "ascending" value = "ASC"> Ascending <br>
 		<input type = "radio" name = "descending" value = "DESC"> Descending <br>
 
+		<p> Select if you want to order by price or name: </p>
 		<input type = "radio" name = "price" value = "PRICE"> Price <br>
 		<input type = "radio" name = "name" value = "NAME"> Name <br>
 
+		<!-- submit button to reorde -->
 		<input type = "submit" value= "Submit">
 
 </form>

@@ -25,25 +25,23 @@ if(isset($_POST['name']) && isset($_POST['ascending'])) {
 
 // order by descending names
 else if(isset($_POST['name']) && isset($_POST['descending'])) {
-        $query = "SELECT * FROM Product ORDER BY description DESC";
+    $query = "SELECT * FROM Product ORDER BY description DESC";
     }
 
 $result = mysqli_query($connection, $query);
 
 if (!$result) {
-        die("Query failed");
-        }
+    die("Query failed");
+    }
 
 //while loop to print results
 while ($row = mysqli_fetch_assoc($result)) {
-             echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
-           }
-           mysqli_free_result($result);
+    echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
+    }
 
+mysqli_free_result($result);
+mysqli_close($connection);
 
-         mysqli_close($connection);
-       ?>
-
-
+?>
 </html>
 </body>
