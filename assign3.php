@@ -86,10 +86,11 @@ while ($row = mysqli_fetch_assoc($result)) {
 echo "<ul>";
 echo '<input type="radio" name="product3" value="';
 			 echo $row["productID"];
-			 echo '">'. $row["description"];
+			 echo '">'. $row["description"]. " " .$row["quantity"];
 			 echo " -- Customer ID: " . $row["customerID"];
 echo "</ul>";
 }
+
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
