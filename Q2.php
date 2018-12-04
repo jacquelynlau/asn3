@@ -1,12 +1,11 @@
 <?php
 
    include 'connecttodb.php';
-//   $price = $_POST["price"];
-  // $descending = $_POST["descending"];
+
+
   if (isset($_POST["reorder"])) {
    if ((isset($_POST["name"])) && (isset($_POST["type"]))) {
      $query = 'SELECT * FROM Product ORDER BY ' . $_POST["name"] . ' ' . $_POST["type"];
-   }
 
    $result = mysqli_query($connection, $query);
                if (!$result) {
@@ -20,4 +19,6 @@
 }
              # Close connection after
              mysqli_close($connection);
+
+           }
 ?>
