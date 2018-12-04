@@ -3,7 +3,8 @@
 
 <?php
   include 'connecttodb.php';
-  include 'reorderbydescription.php'; 
+  include 'reorderbydescription.php';
+  include 'reorderbyprice.php'
 ?>
 
 <form method="post" action="assign3.php">

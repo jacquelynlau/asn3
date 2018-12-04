@@ -1,7 +1,6 @@
-// REORDER BY PRICES OR NAME
 
 <?php
-include 'connectdb.php';
+include 'connecttodb.php';
 
 $PriceOrder= $_POST["price"];
    echo $PriceOrder;

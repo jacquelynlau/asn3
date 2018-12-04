@@ -1,7 +1,6 @@
-// REORDER BY DESCRIPTION (ascending or descending)
 
 <?php
-include 'connectdb.php';
+include 'connecttodb.php';
 
 $DescriptionOrder = $_POST["description"];
 echo $DescriptionOrder;
