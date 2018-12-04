@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 <?php
 	include 'connecttodb.php';
 
@@ -22,17 +26,25 @@
     echo "<p> This customer ID is unavailable. </p>";
   }
 
-
   // if the customerID does not exist, add the new customer
   else {
-    $query = "INSERT INTO Customer (customerID, firstName, lastName, city, phoneNumber) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'] . "', '" . $_POST['phonenumber'] . "')";
+    $query = "INSERT INTO Customer (customerID, firstName, lastName, city, phoneNumber)
+    VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'] . "', '" . $_POST['phonenumber'] . "')";
     $result = mysqli_query($connection,$query);
     if (!$result) {
         die("databases query failed.");
-      }
-      else {
-       echo "<p> Customer added </p>";
-      }
+    }
+    else {
+        echo "<h1> Customer successfully added! </h1>";
+    }
    }
+
    mysqli_close($connection);
 ?>
+
+<br>
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
+
+</html>
+</body>
