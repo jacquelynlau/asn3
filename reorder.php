@@ -9,8 +9,8 @@
 
 <!-- organize by ascending or descending order button -->
 <select name = "order">
-    <input type = "radio" name = "ascending" value = "ASC"> Ascending </option>
-    <input type = "radio" name = "descending" value = "DESC"> Descending </option>
+    <option name = "ascending" value = "ASC"> Ascending </option>
+    <option name = "descending" value = "DESC"> Descending </option>
 </select>
 
 
