@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
 <?php
 
    include 'connecttodb.php';
@@ -15,6 +20,6 @@
     else {
         echo "<h1> Phone number successfully updated! </h1>";
     }
-    
+
    mysqli_close($connection);
 ?>
