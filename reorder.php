@@ -24,12 +24,12 @@
 <input name= "reorder" type="submit" value="Show">
 
 </form>
+
 <?php
-  include 'connecttodb.php';
+         # If the user pressed "Show"
          if (isset($_POST["reorder"])) {
            # Reorder the products with depending on the user's choice
-           $query = 'SELECT * FROM Product;'
-
+           $query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["type"];
            $result = mysqli_query($connection, $query);
            if (!$result) {
              die("Query failed");
