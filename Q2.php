@@ -7,7 +7,6 @@
 <body>
 
 <?php
-
 // order by ascending prices
 if(isset($_POST['price']) && isset($_POST['ascending'])) {
     $query = "SELECT * FROM Product ORDER BY costPerItem ASC";
@@ -41,7 +40,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 mysqli_free_result($result);
 mysqli_close($connection);
-
 ?>
 
 <br>
