@@ -19,7 +19,7 @@ else if(isset($_POST['price']) && isset($_POST['descending'])) {
     }
 
 // order by ascending names
-else if(isset($_POST['name']) && isset($_POST['ascending'])) {
+if(isset($_POST['name']) && isset($_POST['ascending'])) {
     $query = "SELECT * FROM Product ORDER BY descripion ASC";
     }
 
@@ -40,7 +40,7 @@ while ($row = mysqli_fetch_assoc($result)) {
            }
            mysqli_free_result($result);
 
-         
+
          mysqli_close($connection);
        ?>
 
