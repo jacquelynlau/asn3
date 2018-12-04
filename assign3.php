@@ -71,12 +71,13 @@
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
+</form>
 
 	<p> Select the product : </p>
 	<?php
 			include 'connecttodb.'
 
-</form>
+
 
 
 </body>
