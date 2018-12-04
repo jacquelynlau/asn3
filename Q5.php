@@ -2,7 +2,6 @@
 <html>
 <body>
 
-
 <?php
 
    include 'connecttodb.php';

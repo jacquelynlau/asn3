@@ -6,6 +6,7 @@
 
      include 'connecttodb.php';
 
+     //delete the selected customer 
      $query = "DELETE FROM Customer WHERE customerID='" . $_POST['customerdelete'] . "'";
      $result = mysqli_query($connection,$query);
 
