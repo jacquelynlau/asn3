@@ -58,5 +58,7 @@ mysqli_close($connection);
 <a href="assign3.php">Go Home</a>
 
 
-</html>
+
 </body>
+
+</html> 
