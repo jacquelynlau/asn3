@@ -77,7 +77,7 @@ mysqli_close($connection);
 
 <?php
 		    include 'connecttodb.php';
-		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
+		  	$query = "SELECT * FROM PRODUCT GROUP BY productID;";
 		  	$result = mysqli_query($connection,$query);
 
 		 	if (!$result) {
@@ -86,10 +86,10 @@ mysqli_close($connection);
 
 			while ($row = mysqli_fetch_assoc($result)) {
 		    echo "<ul>";
-		    echo '<input type="radio" name="customer3" value="';
-		           echo $row["customerID"];
-		           echo '">'. $row["firstName"]. " " .$row["lastName"];
-		           echo " -- Customer ID: " . $row["customerID"];
+		    echo '<input type="radio" name="product3" value="';
+		           echo $row["productID"];
+		           echo '">'. $row["description"]. " " .$row["quantity"];
+		           echo " -- Customer ID: " . $row["productID"];
 		    echo "</ul>";
 			}
 
