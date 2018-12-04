@@ -33,7 +33,7 @@
 	<?php
 			include "reorder.php";
 	?>
-			<input name = "reorder" type = "submit" value = "Reorder Table">
+			<input type = "submit" value = "Reorder Table">
 </form>
 
 
