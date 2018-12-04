@@ -28,7 +28,7 @@
 </form>
 
 <!-- Q2 -->
-<p> 2. How do you want to order the products? </p>
+<h2> 2. How do you want to order the products? </h2>
 
 <form action= "Q2.php" method= "post">
 
@@ -109,7 +109,7 @@ mysqli_close($connection);
 
 
 <!-- Q4 -->
-<p> 4. Add a new customer: </p>
+<h2> 4. Add a new customer: </h2>
 
 <form action = "Q4.php" method = "post">
 
