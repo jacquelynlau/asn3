@@ -33,6 +33,10 @@
 	<?php
 		include "reorder.php";
 	?>
+<input type = "submit" value = "Reorder Table">
+
+</form>
+
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
 	  	<option value = "ASC"> Ascending </option>
