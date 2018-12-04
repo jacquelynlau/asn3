@@ -45,7 +45,7 @@
 		</select>
 
 		<!-- reorder the products button -->
-		<input name = "submit" type ="submit" value = "Reorder Table"/>
+		<input name = "reorder" type ="submit" value = "Reorder Table"/>
 	</form>
 
 	<?php

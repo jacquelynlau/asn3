@@ -1,8 +1,7 @@
 
-
 <?php
 include 'connecttodb.php';
-if (isset($_POST["submit"])) {
+if (isset($_POST["reorder"])) {
 $query = 'SELECT * FROM Product ORDER BY ' . $_POST["description"] . ' ' . $_POST["type"];
 
 $result = mysqli_query($connection, $query);
