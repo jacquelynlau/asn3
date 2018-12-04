@@ -23,8 +23,8 @@
   }
 
   else {
-  $customerID = $_POST["customerID"]
-  $customerFName = $_POST["firstname"]
+  $customerID = $_POST["customerID"];
+  $customerFName = $_POST["firstname"];
   $customerLName = $_POST["lastname"];
   $customerCity = $_POST["city"];
   $customerPhone = $_POST["phonenumber"];
