@@ -16,7 +16,7 @@
   <input type = "radio" name = "price" value = "PRICE"> Price </option>
   <input type = "radio" name = "name" value = "DESC"> Name </option>
 
-<input name = "reorder" type = "submit" value = "Reorder Table">
+  
 
 </html>
 </body>
