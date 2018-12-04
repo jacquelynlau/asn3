@@ -2,7 +2,6 @@
 
 	include 'connecttodb.php';
 
-
   $check4 = 0;
   $query = "SELECT customerID FROM Customer";
   $result = mysqli_query($connection, $query);
@@ -23,11 +22,7 @@
   }
 
 
-else if (isset($_POST["submit4"])) {
-    $customerID = $_POST["customerID"];
-    $customerFName = $_POST["firstname"];
-    $customerLName = $_POST["lastname"];
-    $customerCity = $_POST["city"];
+  else {
     $query = "INSERT INTO Customer VALUES ('$customerID', '$customerFName', '$customerLName', '$customerCity')";
 
     $insert_result = mysqli_query($connection, $query);
