@@ -44,6 +44,7 @@ mysqli_close($connection);
 
 ?>
 
+<br> 
 <a href="assign3.php">Go Home</a>
 </html>
 </body>
