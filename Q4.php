@@ -24,13 +24,14 @@
     echo "<p> This customer ID is unavailable. </p>";
   }
 
-  if ($check4 = 0){
-    $customerID = $_POST["customerID"]
-    $customerFName = $_POST["firstname"];
-    $customerLName = $_POST["lastname"];
-    $customerCity = $_POST["city"];
-    $query = "INSERT INTO Customer VALUES ('$customerFName', '$customerLName',
-          '$customerCity', '$customerID')";
+  //if ($check4 = 0){
+
+  //  $customerID = $_POST["customerID"]
+  //  $customerFName = $_POST["firstname"];
+  //  $customerLName = $_POST["lastname"];
+  //  $customerCity = $_POST["city"];
+  //  $query = "INSERT INTO Customer VALUES ('$customerFName', '$customerLName',
+    //      '$customerCity', '$customerID')";
 
       $result = mysqli_query($connection,$query);
 
