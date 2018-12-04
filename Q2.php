@@ -6,7 +6,7 @@
    $query = 'SELECT * from products ORDER BY ' . $_POST["type"] . ' ' . $_POST["order"];
    }
 
-   $result = mysqli_query($connection,$query);d
+   $result = mysqli_query($connection,$query);
 
    if (!$result) {
         die("databases query failed.");
