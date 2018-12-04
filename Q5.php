@@ -23,3 +23,9 @@
 
    mysqli_close($connection);
 ?>
+
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
+
+</body>
+</html>
