@@ -1,5 +1,8 @@
 <?php
+
 	include 'connecttodb.php';
+
+
 
   //initialize checks for if the customerID exists
   $check4 = 0;
@@ -22,12 +25,11 @@
   }
 
   if ($check4 = 0){
-      $query = "INSERT INTO Customer(customerID, firstName, lastName, city) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'];
+      $query = "INSERT INTO Customer(customerID, firstName, lastName, city) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'])";
       $result = mysqli_query($connection,$query);
-      if (!$result) {
-         die("databases query failed.");
-      }
-   }
-   mysqli_close($connection);
+
+  if (!$result) {
+     die("databases query failed.");
+  }
 
 ?>
