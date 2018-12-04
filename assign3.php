@@ -107,5 +107,13 @@ mysqli_close($connection);
 		<input name = "submit" type = "submit" value = "Add New Purchase">
 </form>
 
+
+<!-- Q4 -->
+<p> 4. Add a new customer: </p>
+
+<form action = "Q4.php" method = "post">
+	<input type="text" name="customerID" placeholder="enter Customer ID">
+</form>
+
 </body>
 </html>
