@@ -36,7 +36,7 @@
         '$customerCity', '$customerID')";
 
     $insert_result = mysqli_query($connection, $query);
-
+}
 
     if (!$insert_result) {
                die("Query to insert customer failed: ");
