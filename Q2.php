@@ -1,14 +1,19 @@
 <?php
    include 'connecttodb.php';
 
-   if(isset($_POST["submit"]) && (isset($_POST["price"]) && isset($_POST["ascending"])){//if the user chooses, get new ordering
-   $query = "SELECT * FROM Product ORDER BY price ASC; 
+   if()(isset($_POST["submit"])
+   && (isset($_POST["price"])
+   && isset($_POST["ascending"])
+  ){//if the user chooses, get new ordering
+   $query = "SELECT * FROM Product ORDER BY price ASC;
    }
    $result = mysqli_query($connection,$query);
 
    if (!$result) {
         die("databases query failed.");
     }
+
+
    echo "</br>So many products</br>";
    echo "<table align='center'>";
    echo "<th>Product Name</th>";
