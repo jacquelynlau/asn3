@@ -59,9 +59,6 @@
 		        	die("databases query failed");
 		 	}
 
-			echo "1. Select the customer you are looking up: ";
-		  echo "<br>";
-
 			while ($row = mysqli_fetch_assoc($result)) {
 		    echo "<ul>";
 		    echo '<input type="radio" name="customer" value="';
@@ -69,12 +66,6 @@
 		           echo '">'. $row["firstName"]. " " .$row["lastName"];
 		           echo "<br>";
 		           echo "Customer ID: " . $row["customerID"];
-		           echo "<br>";
-		           echo "Phone Number: " . $row["phoneNumber"];
-		           echo "<br>";
-		           echo "City: " . $row["city"];
-		           echo "<br>";
-		           echo "Agent ID: " . $row["agentID"];
 		    echo "</ul>";
 			}
 			mysqli_free_result($result);
@@ -85,7 +76,7 @@
 
 
 
-		
+
 
 </form>
 
