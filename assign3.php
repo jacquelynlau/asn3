@@ -45,7 +45,7 @@
 </form>
 
 <!-- Q3 -->
-<p> 3. Insert a new purchase: </p>
+<h2> 3. Insert a new purchase: </h2>
 
 <form action = "Q3.php" method = "post">
 

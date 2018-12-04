@@ -8,7 +8,6 @@
  	}
 
 	echo "<h2> 1. Select the customer you are looking up: </h2>";
-  echo "<br>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
     echo "<ul>";
