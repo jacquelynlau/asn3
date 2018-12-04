@@ -49,8 +49,9 @@
 
 <form action = "Q3.php" method = "post">
 
-		<p> Select the customer: </p>
-		<?php
+<p> Select the customer: </p>
+
+<?php
 		    include 'connecttodb.php';
 		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
 		  	$result = mysqli_query($connection,$query);
@@ -74,30 +75,28 @@ mysqli_close($connection);
 
 <p> Select the product: </p>
 
-<?php>
-$query = "SELECT * FROM Product;";
-$result = mysqli_query($connection,$query);
+<?php
+		    include 'connecttodb.php';
+		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
+		  	$result = mysqli_query($connection,$query);
 
-if (!$result) {
-			die("databases query failed");
-}
+		 	if (!$result) {
+		        	die("databases query failed");
+		 	}
 
-while ($row = mysqli_fetch_assoc($result)) {
-echo "<ul>";
-echo '<input type="radio" name="product3" value="';
-			 echo $row["productID"];
-			 echo '">'. $row["description"]. " " .$row["quantity"];
-			 echo " -- Customer ID: " . $row["productID"];
-echo "</ul>";
-}
+			while ($row = mysqli_fetch_assoc($result)) {
+		    echo "<ul>";
+		    echo '<input type="radio" name="customer3" value="';
+		           echo $row["customerID"];
+		           echo '">'. $row["firstName"]. " " .$row["lastName"];
+		           echo " -- Customer ID: " . $row["customerID"];
+		    echo "</ul>";
+			}
 
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
 
-
 </form>
-
-
 </body>
 </html>
