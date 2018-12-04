@@ -113,6 +113,11 @@ mysqli_close($connection);
 
 <form action = "Q4.php" method = "post">
 	<input type="text" name="customerID" placeholder="enter Customer ID">
+	<input type="text" name="firstname" placeholder="enter First Name">
+	<input type="text" name="lastname" placeholder="enter Last Name">
+	<input type="text" name="city" placeholder="enter City">
+	<br>
+	<input name = "submit4" type = "submit" value = "Add New Customer">
 </form>
 
 </body>
