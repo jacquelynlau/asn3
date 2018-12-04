@@ -1,9 +1,15 @@
+
+
+
 <?php
-      $query = "SELECT * FROM Product ORDER BY description ASC";
-      if(isset($_POST["type"]) && isset($_POST["order"])){
-      $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
-      }
-      $result = mysqli_query($connection,$query);
+  //
+
+
+    //  $query = "SELECT * FROM Product ORDER BY description ASC";
+    //  if(isset($_POST["type"]) && isset($_POST["order"])){
+    //  $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
+    //  }
+    //  $result = mysqli_query($connection,$query);
 
       if (!$result) {
           die("databases query failed.");
