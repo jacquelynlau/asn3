@@ -29,7 +29,7 @@
          # If the user pressed "Show"
          if (isset($_POST["reorder"])) {
            # Reorder the products with depending on the user's choice
-           $query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["type"];
+           $query = 'SELECT * FROM Product ORDER BY ' . $_POST["type"] . ' ' . $_POST["order"];
            $result = mysqli_query($connection, $query);
            if (!$result) {
              die("Query failed");
