@@ -112,6 +112,8 @@ mysqli_close($connection);
 <p> 4. Add a new customer: </p>
 
 <form action = "Q4.php" method = "post">
+
+	<!-- enter the customer information -->
 	<input type="text" name="customerID" placeholder="enter Customer ID">
 	<br>
 	<input type="text" name="firstname" placeholder="enter First Name">
@@ -122,11 +124,13 @@ mysqli_close($connection);
 	<br>
 	<input type="text" name="phonenumber" placeholder="enter Phone Number">
 	<br>
+
+	<!-- submit button to add new customer -->
 	<input name = "submit4" type = "submit" value = "Add New Customer">
 </form>
 
 <!-- Q5 -->
-<p> 5. A: </p>
+<p> 5. </p>
 
 <!-- Q6. update customer's phone number -->
 
