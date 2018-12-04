@@ -22,13 +22,12 @@
         $check4 = 1;
      }
 
-
   if ($check4 == 1) {
     echo "<p> This customer ID is unavailable. </p>";
   }
 }
 
-  if ($check4 == 0){
+if(isset($_POST['submit'])  {
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
