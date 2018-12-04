@@ -40,6 +40,7 @@
 		<input type = "radio" name = "price" value = "PRICE"> Price <br>
 		<input type = "radio" name = "name" value = "NAME"> Name <br>
 
+		<p> *refresh page to clear previous options* 
 		<!-- submit button to reorde -->
 		<input type = "submit" value= "Submit">
 
