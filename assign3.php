@@ -37,7 +37,7 @@
 	<input type = "radio" name = "price" value = "PRICE"> Price <br>
 	<input type = "radio" name = "name" value = "NAME"> Name <br>
 
-	<input type = "reorder" value= "Submit">
+	<input type = "submit" value= "Submit">
 
 </form>
 </body>
