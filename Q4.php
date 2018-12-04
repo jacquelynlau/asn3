@@ -35,9 +35,9 @@
     }
    }
 
-   echo <br>
+   echo <br>;
 
-   echo <a href="assign3.php">Go Home</a>
+   echo <a href="assign3.php">Go Home</a>;
 
    mysqli_close($connection);
 ?>
