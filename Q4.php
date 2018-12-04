@@ -27,7 +27,7 @@
     echo "<p> This customer ID is unavailable. </p>";
   }
 
-  if ($check4 == 0){
+  else if ($check4 == 0){
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
