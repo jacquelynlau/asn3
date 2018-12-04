@@ -37,7 +37,7 @@ else if (isset($_POST["newCustomer"])) {
     if (!$insert_result) {
                die("Query to insert customer failed.");
              }
-             else {
+    if($insert_result){
                  echo 'Customer added!';
                }
             }
