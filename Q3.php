@@ -6,7 +6,8 @@
     $productID = $_POST["product3"];
     $quantity = $_POST["quantity"];
 
+    // if there is missing information
     if (!$productID || !$quantity || !$customerID){
-                echo "<h1> missing information </h1>";
+                echo "<p> There is missing information. </p>";
     }
 }
