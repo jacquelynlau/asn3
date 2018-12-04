@@ -28,7 +28,7 @@
     $customerLName = $_POST["lastname"];
     $customerCity = $_POST["city"];
 
-    $query = "INSERT INTO Customer VALUES ('100', 'Jac', 'Lau', 'city','77-7777','11')";
+    $query = "INSERT INTO Customer VALUES ("100", "Jac", "Lau", "city","772-7777","11")";
 
     $insert_result = mysqli_query($connection, $query);
 
