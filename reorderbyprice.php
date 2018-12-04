@@ -7,11 +7,11 @@ $PriceOrder= $_POST["price"];
 
    if ($PriceOrder == "DESC"){
      // if descending order is selected
-     $query = 'SELECT * FROM Products ORDER BY Cost DESC';
+     $query = 'SELECT * FROM Product ORDER BY Cost DESC';
      }
      // if ascending order is selected
      else{
-     $query = 'SELECT * FROM Products ORDER BY Cost ASC';
+     $query = 'SELECT * FROM Product ORDER BY Cost ASC';
      }
 
      $result=mysqli_query($connection,$query);
