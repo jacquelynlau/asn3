@@ -49,6 +49,7 @@
 
 <form action = "Q3.php" method = "post">
 
+<!-- lists the customers with radio button on side -->
 <p> Select the customer: </p>
 
 <?php
@@ -73,6 +74,7 @@ mysqli_free_result($result);
 mysqli_close($connection);
 ?>
 
+<!-- lists the products with radio button on side -->
 <p> Select the product: </p>
 
 <?php
@@ -88,7 +90,7 @@ mysqli_close($connection);
 		    echo "<ul>";
 		    echo '<input type="radio" name="product3" value="';
 		           echo $row["productID"];
-		           echo '">'. $row["description"]; 
+		           echo '">'. $row["description"];
 		           echo " -- Product ID: " . $row["productID"];
 		    echo "</ul>";
 			}
@@ -97,6 +99,7 @@ mysqli_free_result($result);
 mysqli_close($connection);
 ?>
 
+<input type = "submit" value = "Add New Purchase">
 </form>
 </body>
 </html>
