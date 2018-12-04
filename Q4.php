@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
 <?php
 
 	include 'connecttodb.php';
@@ -47,3 +52,11 @@
 mysqli_close($connection);
 
 ?>
+
+<br>
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
+
+
+</html>
+</body>
