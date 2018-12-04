@@ -13,7 +13,7 @@
     }
 
     while ($row = mysqli_fetch_assoc($result)) {
-              echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["productDescription"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["numberItems"];
+              echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
             }
 
   // echo "</br>So many products</br>";
