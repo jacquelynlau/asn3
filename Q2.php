@@ -31,7 +31,7 @@
              echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
            }
            mysqli_free_result($result);
-         }
+
          # Close connection after
          mysqli_close($connection);
        ?>
