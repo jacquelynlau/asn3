@@ -25,10 +25,11 @@
 
 </form>
 <?php
-
+  include 'connecttodb.php';
          if (isset($_POST["reorder"])) {
            # Reorder the products with depending on the user's choice
-           $query = 'SELECT * from Product;'
+           $query = 'SELECT * FROM Product;'
+
            $result = mysqli_query($connection, $query);
            if (!$result) {
              die("Query failed");
