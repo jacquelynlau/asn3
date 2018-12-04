@@ -21,9 +21,6 @@
 </div>
 
 
-
-
-
   <form action = "getproducts1.php" method = "post">
 
 	<?php
