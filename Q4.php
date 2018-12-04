@@ -28,6 +28,9 @@
       if (!$result) {
          die("databases query failed.");
       }
+      else {
+        echo "<p> Customer added </p>"; 
+      }
    }
    mysqli_close($connection);
 ?>
