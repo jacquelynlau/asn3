@@ -64,8 +64,7 @@
 		    echo '<input type="radio" name="customer" value="';
 		           echo $row["customerID"];
 		           echo '">'. $row["firstName"]. " " .$row["lastName"];
-		           echo "<br>";
-		           echo "Customer ID: " . $row["customerID"];
+		           echo "-- Customer ID: " . $row["customerID"];
 		    echo "</ul>";
 			}
 			mysqli_free_result($result);
