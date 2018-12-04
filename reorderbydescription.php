@@ -1,3 +1,5 @@
+// REORDER BY DESCRIPTION (ascending or descending)
+
 <?php
 include 'connectdb.php';
 
