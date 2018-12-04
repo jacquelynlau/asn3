@@ -10,10 +10,18 @@
 
 <?php
          # If the user pressed "Show"
-         if (isset($_POST["reorder"]) && (isset($_POST["ascending"]) && (isset($_POST["price"])   ) {
+         //if (isset($_POST["reorder"]) && (isset($_POST["ascending"]) && (isset($_POST["price"])   ) {
            # Reorder the products with depending on the user's choice
            //$query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["ascdesc"];
+
+           $priceOrder = $_POST ["price"]
+           echo $priceOrder;
+           if ($priceOrder == "ASC") {
+
+           // order price ascending
            $query = "SELECT * FROM Product ORDER BY costPerItem ASC";
+         }
+
            $result = mysqli_query($connection, $query);
            if (!$result) {
              die("Query failed");
