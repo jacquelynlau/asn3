@@ -3,9 +3,9 @@
    include 'connecttodb.php';
 
 
-  if (isset($_POST["reorder"])) {
-   if ((isset($_POST["name"])) && (isset($_POST["type"]))) {
-     $query = 'SELECT * FROM Product ORDER BY ' . $_POST["name"] . ' ' . $_POST["type"];
+
+   if ((isset($_POST["price"])) && (isset($_POST["ascending"]))) {
+     $query = 'SELECT * FROM Product ORDER BY ' . $_POST["price"] . ' ' . $_POST["ascending"];
 
    $result = mysqli_query($connection, $query);
                if (!$result) {
@@ -20,5 +20,5 @@
              # Close connection after
              mysqli_close($connection);
 
-           }
+
 ?>
