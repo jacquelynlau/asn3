@@ -3,7 +3,7 @@
   include 'connecttodb.php';
 
   if(isset($_POST["type"]) && isset($_POST["order"])){
-   $query = "SELECT * FROM Product ORDER BY '.$_POST["type"].' '.$_POST["order"]'";
+   $query = 'SELECT * FROM Product ORDER BY '.$_POST["type"].' '.$_POST["order"]'';
    }
 
    $result = mysqli_query($connection,$query);
