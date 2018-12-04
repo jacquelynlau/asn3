@@ -77,7 +77,7 @@ mysqli_close($connection);
 
 <?php
 		    include 'connecttodb.php';
-		  	$query = "SELECT * FROM PRODUCT;";
+		  	$query = "SELECT * FROM Product;";
 		  	$result = mysqli_query($connection,$query);
 
 		 	if (!$result) {
