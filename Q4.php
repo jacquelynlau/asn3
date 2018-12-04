@@ -23,7 +23,7 @@
   }
 
 
-else {
+else if (isset($_POST["newCustomer"])) {
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
@@ -31,7 +31,7 @@ else {
     $query = "INSERT INTO Customer VALUES ('$customerID', '$customerFName', '$customerLName', '$customerCity')";
 
     $insert_result = mysqli_query($connection, $query);
-}
+
 
 
     if (!$insert_result) {
@@ -39,6 +39,7 @@ else {
              }
              else {
                  echo 'Customer added!';
+               }
             }
 mysqli_close($connection);
 
