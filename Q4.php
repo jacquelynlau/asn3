@@ -2,12 +2,7 @@
 
 	include 'connecttodb.php';
 
-  //if there is missing information
-  //if (!$customerID || !$firstname || !$lastname || !$city){
-    //          echo "<p> There is missing information. </p>";
-//  }
 
-  //initialize checks for if the customerID exists
   $check4 = 0;
   $query = "SELECT * FROM Customer";
   $result = mysqli_query($connection, $query);
@@ -27,7 +22,7 @@
   }
 }
 
-if(isset($_POST['submit4']))  {
+else {
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
