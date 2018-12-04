@@ -23,8 +23,8 @@
 <!-- reorder the products button -->
 <input type = "submit" value = "Reorder Table"/>
 
-
 <?php
   include 'getproducts2.php';
 ?>
+
 </form>
