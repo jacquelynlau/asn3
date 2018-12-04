@@ -15,7 +15,7 @@
            //$query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["ascdesc"];
 
            $priceOrder = $_POST ["price"]
-           echo $priceOrder;
+           
            if ($priceOrder == "ASC") {
 
            // order price ascending
