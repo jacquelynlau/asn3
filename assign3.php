@@ -21,16 +21,17 @@
 </div>
 
 	<!-- Q1 -->
-  <form action = "getproducts1.php" method = "post">
+  <form action = "Q1.php" method = "post">
 		<?php
 				include "getcustomers.php";
 		?>
 				<input type = "submit" value = "Get Purchases">
   </form>
 
+	<!-- Q2 -->
 	<p> Select how you want to order the product: </p>
 
-	<form action="assign3.php" method="post">
+	<form action="reorderproducts1.php" method="post">
 
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
