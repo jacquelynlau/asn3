@@ -210,11 +210,10 @@ mysqli_close($connection);
 <h3> 7. List the customers who have bought more than a give quantity: </h3>
 
 <form action = "Q7.php" method = "post">
-		<!-- enter the phone number to update -->
+		<!-- enter the quantity you want to check -->
 		<input name="quantity7" type="text" placeholder="Enter Quantity">
 		<br>
-
-		<!-- submit button to update phone number -->
+		<!-- submit button to find -->
 		<input name = "submit7" type = "submit" value = "Find">
 </form>
 
@@ -222,7 +221,11 @@ mysqli_close($connection);
 <!-- Q8. List products not purchased -->
 <h3> 8. List the products that have not been purchased: </h3>
 
+<form action = "Q8.php" method = "post">
 
+		<!-- submit button to go to list of products not purchased -->
+		<input name = "submit8" type = "submit" value = "Go to list!">
+</form>
 
 </body>
 </html>
