@@ -35,9 +35,9 @@
 
 
 
-    if (!$insert_result) {
-               die("Query to insert customer failed.");
-             }
+  //  if (!$insert_result) {
+    //           die("Query to insert customer failed.");
+      //       }
     if($insert_result){
                  echo "<p> Customer added! </p>";
                }
