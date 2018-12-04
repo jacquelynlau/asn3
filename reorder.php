@@ -1,5 +1,6 @@
 <?php
     include 'connecttodb.php';
+    include 'Q2.php';
 ?>
 
 
