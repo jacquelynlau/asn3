@@ -43,6 +43,7 @@
              }
              else {
                  echo 'Customer added!';
+            }
 mysqli_close($connection);
 
 ?>
