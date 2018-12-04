@@ -30,7 +30,7 @@
          if (isset($_POST["reorder"])) {
            # Reorder the products with depending on the user's choice
            //$query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["ascdesc"];
-           $query = "SELECT * FROM product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
+           $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
            $result = mysqli_query($connection, $query);
            if (!$result) {
              die("Query failed");
