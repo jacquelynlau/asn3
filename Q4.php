@@ -26,7 +26,7 @@
      if($row['customerID'] == $_POST['customerID']){
         $check4 == 1;
      }
-  }
+
 
   if ($check4 == 1) {
     echo "<p> This customer ID is unavailable. </p>";
@@ -43,6 +43,7 @@
     $insert_result = mysqli_query($connection, $query);
 }
 
+}
     if (!$insert_result) {
                die("Query to insert customer failed.");
              }
@@ -58,7 +59,5 @@ mysqli_close($connection);
 <a href="assign3.php">Go Home</a>
 
 
-
 </body>
-
-</html> 
+</html>
