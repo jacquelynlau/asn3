@@ -122,9 +122,6 @@ mysqli_close($connection);
 	<br>
 	<input type="text" name="phonenumber" placeholder="enter Phone Number">
 	<br>
-	<?php
-			include "Q4.php";
-	?>
 	<input name = "submit4" type = "submit" value = "Add New Customer">
 </form>
 

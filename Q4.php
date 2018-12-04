@@ -1,6 +1,8 @@
 <?php
-
 	include 'connecttodb.php';
+
+
+
 
   $check4 = 0;
   $query = "SELECT customerID FROM Customer";
@@ -29,7 +31,7 @@
          die("databases query failed.");
       }
       else {
-        echo "<p> Customer added </p>"; 
+        echo "<p> Customer added </p>";
       }
    }
    mysqli_close($connection);
