@@ -31,14 +31,14 @@
     $query = "INSERT INTO Customer VALUES ('$customerID', '$customerFName',
           '$customerLName','$customerCity')";
 
-    $insert_result = mysqli_query($connection, $query);
+    $result = mysqli_query($connection, $query);
 
 
 
-  //  if (!$insert_result) {
-    //           die("Query to insert customer failed.");
-      //       }
-    if($insert_result){
+  if ($result) {
+               die("Query to insert customer failed.");
+        }
+    if($result){
                  echo "<p> Customer added! </p>";
                }
             }
