@@ -7,6 +7,7 @@
 <html>
 <body>
 
+<form action="#" method="post">
 <!-- organize by ascending or descending order button -->
 <select name = "order">
     <option value = "ASC"> Ascending </option>
@@ -19,8 +20,10 @@
     <option value = "NAME"> Name </option>
 </select>
 
+
 <input name= "reorder" type="submit" value="Show">
 
+</form>
 <?php
 
          if (isset($_POST["reorder"])) {
