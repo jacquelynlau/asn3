@@ -28,7 +28,7 @@
   }
 
   else if ($check4 = 0){
-    $customerID = $_POST["customerID"]
+    $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
     $customerCity = $_POST["city"];
