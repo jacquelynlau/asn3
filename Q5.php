@@ -13,7 +13,7 @@
 
    //if unsuccessful, trigger error message
    if (!$result) {
-        die("databases query failed.");
+        die("databases query failed");
    }
 
    //if successful, trigger success message s
