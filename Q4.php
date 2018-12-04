@@ -3,9 +3,9 @@
 	include 'connecttodb.php';
 
   //if there is missing information
-  if (!$customerID || !$firstname || !$lastname || !$city){
-              echo "<p> There is missing information. </p>";
-  }
+  //if (!$customerID || !$firstname || !$lastname || !$city){
+    //          echo "<p> There is missing information. </p>";
+//  }
 
   //initialize checks for if the customerID exists
   $check4 = 0;
@@ -23,11 +23,11 @@
      }
   }
 
-  if ($check4 = 1) {
+  if ($check4 == 1) {
     echo "<p> This customer ID is unavailable. </p>";
   }
 
-  if ($check4 = 0){
+  if ($check4 == 0){
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
