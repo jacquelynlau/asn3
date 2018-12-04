@@ -30,7 +30,7 @@
 
 	<p> Select how you want to order the product: </p>
 
-	<form action="reorderbydescription.php" method="post">
+	<form action="assign3.php" method="post">
 
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
