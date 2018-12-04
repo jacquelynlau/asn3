@@ -38,7 +38,7 @@ else if (isset($_POST["newCustomer"])) {
                die("Query to insert customer failed.");
              }
     if($insert_result){
-                 echo 'Customer added!';
+                 echo "<p> Customer added! </p>";
                }
             }
 mysqli_close($connection);
