@@ -22,26 +22,12 @@
   }
 
 
-  if (isset($_POST["submit4"])) {
-    $customerID = $_POST["customerID"];
-    $customerFName = $_POST["firstname"];
-    $customerLName = $_POST["lastname"];
-    $customerCity = $_POST["city"];
-
-    $query = "INSERT INTO Customer VALUES ('$customerID', '$customerFName',
-          '$customerLName','$customerCity')";
-
-    $result = mysqli_query($connection, $query);
-
-
-
-  if ($result) {
-               die("Query to insert customer failed.");
-        }
-    if($result){
-                 echo "<p> Customer added! </p>";
-               }
-            }
-mysqli_close($connection);
-
+  else {
+      $query = "INSERT INTO Customer (customerID, firstName, lastName, city, phoneNumber) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'] . "', '" . $_POST['phonenumber'] . "')";
+      $result = mysqli_query($connection,$query);
+      if (!$result) {
+         die("databases query failed.");
+      }
+   }
+   mysqli_close($connection);
 ?>
