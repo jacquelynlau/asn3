@@ -129,6 +129,8 @@ mysqli_close($connection);
 	<input name = "submit4" type = "submit" value = "Add New Customer">
 </form>
 
+
+
 <!-- Q5 -->
 <h3> 5. Update a customer's phone number: </h3>
 
@@ -159,14 +161,15 @@ mysqli_free_result($result);
 mysqli_close($connection);
 ?>
 
-<!-- enter the quantity -->
-<input type="text" name="phonenumber5" placeholder="Enter Phone Number">
+<!-- enter the phone number to update -->
+<input name="phonenumber5" type="text" placeholder="Enter Phone Number">
 <br>
 
-
-<!-- submit button to add new purchase -->
+<!-- submit button to update phone number -->
 <input name = "submit5" type = "submit" value = "Update Phone Number">
 </form>
+
+
 
 <!-- Q6. delete a customer -->
 

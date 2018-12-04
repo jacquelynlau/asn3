@@ -6,7 +6,7 @@
         die("databases query failed.");
     }
     else {
-        echo "<h1> Customer successfully added! </h1>";
+        echo "<h1> Phone number uccessfully updated! </h1>";
     }
    mysqli_close($connection);
 ?>
