@@ -4,7 +4,7 @@
 
   <?php
 
-     include 'connectdb.php';
+     include 'connecttodb.php';
 
      $query = "DELETE FROM Customer WHERE customerID='" . $_POST['customerdelete'] . "'";
      $result = mysqli_query($connection,$query);
