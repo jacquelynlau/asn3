@@ -52,7 +52,7 @@
 		<p> Select the customer: </p>
 		<?php
 		    include 'connecttodb.php';
-		  	$query = "SELECT * FROM Customer GROUP BY lastName;"
+		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
 		  	$result = mysqli_query($connection,$query);
 
 		 	if (!$result) {
