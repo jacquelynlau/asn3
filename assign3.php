@@ -77,7 +77,7 @@ mysqli_close($connection);
 
 <?php
 		    include 'connecttodb.php';
-		  	$query = "SELECT * FROM PRODUCT GROUP BY productID;";
+		  	$query = "SELECT * FROM PRODUCT;";
 		  	$result = mysqli_query($connection,$query);
 
 		 	if (!$result) {
