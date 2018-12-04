@@ -7,7 +7,7 @@
 
 <form method="post" action="assign3.php">
 <!-- organize by ascending or descending order button -->
-<select name = "order">
+<select name = "description">
   <option selected = "selected" value = "ASC"> Ascending </option>
   <option value = "DESC"> Descending </option>
 </select>
