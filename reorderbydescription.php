@@ -2,24 +2,19 @@
 <?php
 include 'connecttodb.php';
 
-$DescriptionOrder = $_POST["description"];
-echo $DescriptionOrder;
+if (isset($_POST["submit"])) {
+$query = 'SELECT * from products ORDER BY ' . $_POST["type"] . ' ' . $_POST["description"];
 
-if ($DescriptionOrder == "ASC") {
-      $query = 'SELECT * FROM Product ORDER BY description ASC';
- } else {
-      $query = 'SELECT * FROM Product ORDER BY description DESC';
- }
-
- $result=mysqli_query($connection,$query);
-
- while ($row=mysqli_fetch_assoc($result)) {
-     echo $row["productID"]. " " .$row["description"]. " " .$row["costPerItem"]. " " .$row["quantity"]. "<br>";
-  }
-
-if (!$result) {
-       die("database query2 failed.");
-     }
-
-   mysqli_free_result($result);
+$result = mysqli_query($connection, $query);
+            if (!$result) {
+              die("Query failed");
+            }
+            # Create a loop to print the data
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
+            }
+            mysqli_free_result($result);
+          }
+          # Close connection after
+          mysqli_close($connection);
 ?>

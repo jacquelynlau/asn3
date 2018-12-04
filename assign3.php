@@ -33,8 +33,6 @@
 
 	<form method="post" action="assign3.php">
 
-
-
 	<!-- organize by ascending or descending order button -->
 	<select name = "description">
 	  <option selected = "selected" value = "ASC"> Ascending </option>
@@ -48,7 +46,11 @@
 	</select>
 
 	<!-- reorder the products button -->
-	<input type ="submit" value = "Reorder Table"/>
-	
+	<input name = "submit" type ="submit" value = "Reorder Table"/>
+
+	<?php
+		include "reorderbydescription.php";
+	?>
+
 </body>
 </html>
