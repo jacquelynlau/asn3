@@ -3,7 +3,9 @@
 	include 'connecttodb.php';
 
 
-
+  if (!$customerID || !$firstname || !$lastname || !$city){
+              echo "<p> There is missing information. </p>";
+  }
   //initialize checks for if the customerID exists
   $check4 = 0;
   $query = "SELECT customerID FROM Customer";
