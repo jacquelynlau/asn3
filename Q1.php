@@ -20,7 +20,7 @@
 		}
 
 		if (!$result) {
-			die("database query2 failed.");
+			die("database query failed");
 		}
 
 		mysqli_free_result($result);

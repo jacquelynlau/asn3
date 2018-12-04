@@ -30,7 +30,7 @@ else if(isset($_POST['name']) && isset($_POST['descending'])) {
 $result = mysqli_query($connection, $query);
 
 if (!$result) {
-    die("Query failed");
+    die("database query failed");
     }
 
 //while loop to print results

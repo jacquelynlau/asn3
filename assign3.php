@@ -124,13 +124,13 @@ mysqli_close($connection);
 </form>
 
 <!-- Q5 -->
-<p> 5. Add a new customer: </p>
+<p> 5. A: </p>
 
 <!-- Q6. update customer's phone number -->
 
 <!-- Q7. delete a customer -->
 
-<!-- Q8. list customer names who have bought more than a quantity --> 
+<!-- Q8. list customer names who have bought more than a quantity -->
 
 
 </body>

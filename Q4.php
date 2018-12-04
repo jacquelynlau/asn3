@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-
 <?php
 
 	include 'connecttodb.php';
@@ -24,13 +19,14 @@
   //check if customerID exists
   while ($row = mysqli_fetch_assoc($result)) {
      if($row['customerID'] == $_POST['customerID']){
-        $check4 == 1;
+        $check4 = 1;
      }
 
 
   if ($check4 == 1) {
     echo "<p> This customer ID is unavailable. </p>";
   }
+}
 
   else if ($check4 == 0){
     $customerID = $_POST["customerID"];
@@ -43,7 +39,7 @@
     $insert_result = mysqli_query($connection, $query);
 }
 
-}
+
     if (!$insert_result) {
                die("Query to insert customer failed.");
              }
@@ -53,11 +49,3 @@
 mysqli_close($connection);
 
 ?>
-
-<br>
-<!-- go home link -->
-<a href="assign3.php">Go Home</a>
-
-
-</body>
-</html>
