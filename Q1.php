@@ -8,7 +8,7 @@
 
 <h1> Here are the purchases: </h1>
 
-<li>
+<ol>
 	<?php
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
@@ -25,7 +25,7 @@
 
 		mysqli_free_result($result);
 	?>
-</li>
+</ol>
 
 <?php
 	mysqli_close($connection);
