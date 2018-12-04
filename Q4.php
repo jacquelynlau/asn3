@@ -4,7 +4,7 @@
 
 
   $check4 = 0;
-  $query = "SELECT * FROM Customer";
+  $query = "SELECT customerID FROM Customer";
   $result = mysqli_query($connection, $query);
 
   if (!$result) {
@@ -16,11 +16,12 @@
      if($row['customerID'] == $_POST['customerID']){
         $check4 = 1;
      }
+   }
 
   if ($check4 == 1) {
     echo "<p> This customer ID is unavailable. </p>";
   }
-}
+
 
 else {
     $customerID = $_POST["customerID"];
