@@ -48,28 +48,44 @@
 <p> 3. Insert a new purchase: </p>
 
 <form action = "Q3.php" method = "post">
+
 		<p> Select the customer: </p>
-		<?php>
-		$query = 'SELECT * FROM Customer';
-		//$result = mysqli_query($connection, $query);
-		while ($row = mysqli_fetch_assoc($result)) {
-	    echo "<ul>";
-	    echo '<input type="radio" name="customer" value="';
-	           echo $row["customerID"];
-	           echo '">'. $row["firstName"]. " " .$row["lastName"];
-	           echo "<br>";
-	           echo "Customer ID: " . $row["customerID"];
-	           echo "<br>";
-	           echo "Phone Number: " . $row["phoneNumber"];
-	           echo "<br>";
-	           echo "City: " . $row["city"];
-	           echo "<br>";
-	           echo "Agent ID: " . $row["agentID"];
-	    echo "</ul>";
+		<?php
+		    include 'connecttodb.php';
+		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
+		  	$result = mysqli_query($connection,$query);
 
+		 	if (!$result) {
+		        	die("databases query failed");
+		 	}
 
+			echo "1. Select the customer you are looking up: ";
+		  echo "<br>";
 
+			while ($row = mysqli_fetch_assoc($result)) {
+		    echo "<ul>";
+		    echo '<input type="radio" name="customer" value="';
+		           echo $row["customerID"];
+		           echo '">'. $row["firstName"]. " " .$row["lastName"];
+		           echo "<br>";
+		           echo "Customer ID: " . $row["customerID"];
+		           echo "<br>";
+		           echo "Phone Number: " . $row["phoneNumber"];
+		           echo "<br>";
+		           echo "City: " . $row["city"];
+		           echo "<br>";
+		           echo "Agent ID: " . $row["agentID"];
+		    echo "</ul>";
+			}
+			mysqli_free_result($result);
+		  mysqli_close($connection);
 		?>
+
+
+
+
+
+		
 
 </form>
 
