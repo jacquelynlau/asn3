@@ -88,7 +88,7 @@ mysqli_close($connection);
 		    echo "<ul>";
 		    echo '<input type="radio" name="product3" value="';
 		           echo $row["productID"];
-		           echo $row["description"]; 
+		           echo '">'. $row["description"]; 
 		           echo " -- Product ID: " . $row["productID"];
 		    echo "</ul>";
 			}
