@@ -28,6 +28,7 @@
 				<input type = "submit" value = "Get Purchases">
   </form>
 
+	<p> "Select the customer you are looking up: "; </p>
 
 	<form action="reorderbydescription.php" method="post">
 
