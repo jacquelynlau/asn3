@@ -4,7 +4,7 @@
   //initialize checks for if the customerID exists
   $check4 = 0;
   $query = "SELECT customerID FROM Customer";
-
+  $result = mysqli_query($connection, $query);
 
   if (!$result) {
         die("databases query failed.");
