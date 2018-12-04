@@ -22,7 +22,7 @@
   }
 
 
-  else {
+  if (isset($_POST["submit4"])) {
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
