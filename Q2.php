@@ -2,7 +2,7 @@
 	include 'connecttodb.php';
 
   if(isset($_POST["price"]) && isset($_POST["ascending"])){
-   $query = "SELECT * FROM product ORDER BY " . $_POST["price"] . " " . $_POST["ascending"] ;
+   $query = "SELECT * FROM Product ORDER BY " . $_POST["price"] . " " . $_POST["ascending"] ;
    }
     $result = mysqli_query($connection,$query);
 
