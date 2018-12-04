@@ -31,11 +31,11 @@
 
 <form action= "reorder.php" method= "post">
 
-<input type = "radio" name = "ascending" value = "ASC"> Ascending <br>
-<input type = "radio" name = "descending" value = "DESC"> Descending <br>
+	<input type = "radio" name = "ascending" value = "ASC"> Ascending <br>
+	<input type = "radio" name = "descending" value = "DESC"> Descending <br>
 
-<input type = "radio" name = "price" value = "PRICE"> Price <br>
-<input type = "radio" name = "name" value = "NAME"> Name <br>
+	<input type = "radio" name = "price" value = "PRICE"> Price <br>
+	<input type = "radio" name = "name" value = "NAME"> Name <br>
 
 <input type = "reorder" value= "Submit">
 

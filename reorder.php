@@ -8,10 +8,6 @@
 <body>
 
 
-<input name= "reorder" type="submit" value="Show">
-
-</form>
-
 <?php
          # If the user pressed "Show"
          if (isset($_POST["reorder"]) && (isset($_POST["ascending"]) && (isset($_POST["price"])   ) {
