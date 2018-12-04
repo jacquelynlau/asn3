@@ -2,15 +2,14 @@
 <html>
 <body>
 
-	<?php
+<?php
 	include 'connecttodb.php';
-	?>
+?>
 
-	<h1> Here are the purchases: </h1>
+<h1> Here are the purchases: </h1>
 
-
-	<ol>
-		<?php
+<ol>
+	<?php
 		$whichCustomer = $_POST["customer"];
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
 		$result = mysqli_query($connection,$query);
@@ -20,16 +19,22 @@
 			echo '</p>';
 		}
 
-
 		if (!$result) {
 			die("database query2 failed.");
 		}
+
 		mysqli_free_result($result);
 
-		?>
-	</ol>
-	<?php
-	mysqli_close($connection);
 	?>
+</ol>
+
+<?php
+	mysqli_close($connection);
+?>
+
+<br>
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
+
 </body>
 </html>
