@@ -219,7 +219,9 @@ mysqli_close($connection);
 </form>
 
 
-<!-- Q8.  -->
+<!-- Q8. List products not purchased -->
+<h3> 8. List the products that have not been purchased: </h3>
+
 
 
 </body>
