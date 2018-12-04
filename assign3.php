@@ -123,5 +123,9 @@ mysqli_close($connection);
 	<input name = "submit4" type = "submit" value = "Add New Customer">
 </form>
 
+<!-- Q5 -->
+<p> 5. Add a new customer: </p>
+
+
 </body>
 </html>
