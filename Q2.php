@@ -4,7 +4,7 @@
     if (isset($_POST["submit"]) && (isset($_POST["ascending"]) && (isset($_POST["price"])) {
 
              # Reorder the products with depending on the user's choice
-             $query = 'SELECT * from Product ORDER BY ' . $_POST["ascending"] . ' ' . $_POST["price"];
+             $query = 'SELECT * FROM Product ORDER BY ' . $_POST["ascending"] . ' ' . $_POST["price"];
              $result = mysqli_query($connection, $query);
              if (!$result) {
                die("Query failed");
