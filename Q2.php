@@ -1,6 +1,7 @@
 <?php
    include 'connecttodb.php';
-   //$query = "SELECT * FROM Product ORDER BY description ASC";//default setting
+   $query = "SELECT * FROM Product ORDER BY description ASC";//default setting
+   if(isset($_POST["reorder"]){
    if(isset($_POST["type"]) && isset($_POST["order"])){//if the user chooses, get new ordering
    $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
    }
@@ -9,6 +10,7 @@
    if (!$result) {
         die("databases query failed.");
     }
+  }
 
    echo "<table>";
    echo "<th>Product Name</th>";
