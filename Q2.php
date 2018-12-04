@@ -4,8 +4,8 @@
 //   $price = $_POST["price"];
   // $descending = $_POST["descending"];
 
-   if ((isset($_POST["price"])) && (isset($_POST["descending"]))) {
-     $query = 'SELECT * from Product ORDER BY ' . $_POST["price"] . ' ' . $_POST["descending"];
+   if ((isset($_POST["name"])) && (isset($_POST["type"]))) {
+     $query = 'SELECT * from Product ORDER BY ' . $_POST["name"] . ' ' . $_POST["type"];
    }
 
    $result = mysqli_query($connection, $query);
