@@ -27,7 +27,7 @@
   }
 }
 
-if(isset($_POST['submit'])  {
+if(isset($_POST['submit']))  {
     $customerID = $_POST["customerID"];
     $customerFName = $_POST["firstname"];
     $customerLName = $_POST["lastname"];
