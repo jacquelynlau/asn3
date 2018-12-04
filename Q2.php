@@ -14,7 +14,7 @@ if(isset($_POST['price']) && isset($_POST['ascending'])) {
     }
 
 // order by descending prices
-else if(isset($_POST['price']) && isset($_POST['descending'])) {
+if(isset($_POST['price']) && isset($_POST['descending'])) {
     $query = "SELECT * FROM Product ORDER BY costPerItem DESC";
     }
 
@@ -24,9 +24,9 @@ if(isset($_POST['name']) && isset($_POST['ascending'])) {
     }
 
 // order by descending names
-else if(isset($_POST['name']) && isset($_POST['descending'])) {
+if(isset($_POST['name']) && isset($_POST['descending'])) {
         $query = "SELECT * FROM Product ORDER BY description DESC";
-        }
+    }
 
 $result = mysqli_query($connection, $query);
 
