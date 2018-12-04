@@ -29,12 +29,10 @@
 <!-- Q2 -->
 <p> Select how you want to order the product: </p>
 
-<form action= "Q2.php" method = "post">
 	<?php
 			include "reorder.php";
 	?>
-			<input name = "reorder" type = "submit" value = "Get Purchases">
-</form>
+
 
 
 </body>

@@ -19,5 +19,27 @@
     <option value = "NAME"> Name </option>
 </select>
 
+<input name= "reorder" type="submit" value="Show">
+
+<?php
+
+         if (isset($_POST["reorder"])) {
+           # Reorder the products with depending on the user's choice
+           $query = 'SELECT * from Product ORDER BY ' . $_POST["type"] . ' ' . $_POST["order"];
+           $result = mysqli_query($connection, $query);
+           if (!$result) {
+             die("Query failed");
+           }
+           # Create a loop to print the data
+           while ($row = mysqli_fetch_assoc($result)) {
+             echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' . $row["description"] . ', Cost: ' . $row["costPerItem"] . ', Quantity: ' . $row["quantity"];
+           }
+           mysqli_free_result($result);
+         }
+         # Close connection after
+         mysqli_close($connection);
+       ?>
+
+
 </html>
 </body>
