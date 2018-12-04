@@ -19,7 +19,7 @@
   //check if customerID exists
   while ($row = mysqli_fetch_assoc($result)) {
      if($row['customerID'] == $_POST['customerID']){
-        $check4 = 1;
+        $check4 == 1;
      }
   }
 
@@ -39,7 +39,7 @@
 }
 
     if (!$insert_result) {
-               die("Query to insert customer failed: ");
+               die("Query to insert customer failed.");
              }
              else {
                  echo 'Customer added!';
