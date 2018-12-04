@@ -1,19 +1,16 @@
 <?php
-
-
    include 'connecttodb.php';
    $query = "SELECT * FROM Product ORDER BY description ASC";//default setting
    if(isset($_POST["type"]) && isset($_POST["order"])){//if the user chooses, get new ordering
-   $query = "SELECT * FROM product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
+   $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
    }
-
    $result = mysqli_query($connection,$query);
 
    if (!$result) {
         die("databases query failed.");
     }
-   echo "</br>So many products</br>";
-   echo "<table align='center'>";
+   
+   echo "<table>";
    echo "<th>Product Name</th>";
    echo	"<th>Price</th>";			//create a table
    echo	"<th>Quantity Left</th>";
