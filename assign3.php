@@ -130,13 +130,40 @@ mysqli_close($connection);
 </form>
 
 <!-- Q5 -->
-<h3> 5. </h3>
+<h3> 5. Update a customer's phone number: </h3>
 
-<!-- Q6. update customer's phone number -->
+<form action = "Q5.php" method = "post">
 
-<!-- Q7. delete a customer -->
+<!-- lists the customers with radio button on side -->
+<p> Select the customer: </p>
 
-<!-- Q8. list customer names who have bought more than a quantity -->
+<?php
+		    include 'connecttodb.php';
+		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
+		  	$result = mysqli_query($connection,$query);
+
+		 	if (!$result) {
+		        	die("databases query failed");
+		 	}
+
+			while ($row = mysqli_fetch_assoc($result)) {
+		    echo "<ul>";
+		    echo '<input type="radio" name="customer5" value="';
+		           echo $row["customerID"];
+		           echo '">'. $row["firstName"]. " " .$row["lastName"];
+		           echo " -- Customer ID: " . $row["customerID"];
+		    echo "</ul>";
+			}
+
+mysqli_free_result($result);
+mysqli_close($connection);
+?>
+
+<!-- Q6. delete a customer -->
+
+<!-- Q7.  -->
+
+<!-- Q8.  -->
 
 
 </body>
