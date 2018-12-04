@@ -40,7 +40,7 @@
 		<input type = "radio" name = "price" value = "PRICE"> Price <br>
 		<input type = "radio" name = "name" value = "NAME"> Name <br>
 
-		<!-- submit button to reorde -->
+		<!-- submit button to reorder -->
 		<input type = "submit" value= "Submit">
 </form>
 
@@ -98,10 +98,14 @@ mysqli_close($connection);
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
-<input type="text" name="quantity" placeholder="Enter Quantity">
-<br>
-<br> 
-<input type = "submit" value = "Add New Purchase">
+    <!-- enter the quantity -->
+		<input type="text" name="quantity" placeholder="Enter Quantity">
+		<br>
+		<br>
+
+		<!-- submit button to add new purchase -->
+		<input name = "submit" type = "submit" value = "Add New Purchase">
 </form>
+
 </body>
 </html>
