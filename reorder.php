@@ -19,6 +19,5 @@
     <option value = "NAME"> Name </option>
 </select>
 
-<input name = "reorder" type = "submit" value = "Reorder Table">
 </html>
 </body>
