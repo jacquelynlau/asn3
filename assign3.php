@@ -61,7 +61,7 @@
 
 			while ($row = mysqli_fetch_assoc($result)) {
 		    echo "<ul>";
-		    echo '<input type="radio" name="customer3" value="';
+		    echo '<input type="radio" name="customer2" value="';
 		           echo $row["customerID"];
 		           echo '">'. $row["firstName"]. " " .$row["lastName"];
 		           echo " -- Customer ID: " . $row["customerID"];
@@ -71,13 +71,10 @@
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
+
+<p> Select the product : </p>
+
 </form>
-
-	<p> Select the product : </p>
-	<?php
-			include 'connecttodb.'
-
-
 
 
 </body>
