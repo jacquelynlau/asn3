@@ -1,10 +1,10 @@
 <?php
 
    include 'connecttodb.php';
-   $price = $_POST["price"];
-   $descending = $_POST["descending"];
+//   $price = $_POST["price"];
+  // $descending = $_POST["descending"];
 
-   if (isset($price)) && (isset($descending)) {
+   if ((isset($_POST["price"])) && (isset($_POST["descending"]))) {
      $query = 'SELECT * from Product ORDER BY ' . $_POST["price"] . ' ' . $_POST["descending"];
    }
 
