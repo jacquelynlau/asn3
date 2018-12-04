@@ -98,7 +98,7 @@ mysqli_close($connection);
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>
-
+<input type="text" name="quantity" placeholder="Enter Quantity">
 <input type = "submit" value = "Add New Purchase">
 </form>
 </body>
