@@ -9,11 +9,11 @@
   while ($row = mysqli_fetch_assoc($result)) {
      //i
      if($row['customerID'] == $_POST['customerID']){
-        $check4 = customerexists;
+        $check4 = 1;
      }
   }
 
-  if ($check4 = customerexists) {
+  if ($check4 = 1) {
     echo "<p> This customer ID is unavailable. </p>";
   }
 
@@ -25,8 +25,5 @@
       }
    }
    mysqli_close($connection);
-
-
-
 
 ?>
