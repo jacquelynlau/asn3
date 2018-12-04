@@ -28,7 +28,7 @@
 </form>
 
 <!-- Q2 -->
-<p> How do you want to order the products? </p>
+<p> 2. How do you want to order the products? </p>
 
 <form action= "Q2.php" method= "post">
 

@@ -7,7 +7,7 @@
         	die("databases query failed");
  	}
 
-	echo "Select the customer you are looking up: ";
+	echo "1. Select the customer you are looking up: ";
   echo "<br>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
