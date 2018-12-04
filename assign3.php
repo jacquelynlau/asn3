@@ -209,12 +209,13 @@ mysqli_close($connection);
 <!-- Q7.  -->
 <h3> 7. List the customers who have bought more than a give quantity: </h3>
 
-<!-- enter the phone number to update -->
-<input name="quantity7" type="text" placeholder="Enter Quantity">
-<br>
+<form action = "Q7.php" method = "post">
+		<!-- enter the phone number to update -->
+		<input name="quantity7" type="text" placeholder="Enter Quantity">
+		<br>
 
-<!-- submit button to update phone number -->
-<input name = "submit7" type = "submit" value = "Find">
+		<!-- submit button to update phone number -->
+		<input name = "submit7" type = "submit" value = "Find">
 </form>
 
 
