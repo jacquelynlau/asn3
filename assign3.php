@@ -40,7 +40,7 @@
 
 		<!-- organize by price or name button -->
 		<select name = "type">
-	  	<option selected = "selected" value = "price"> Price </option>
+	  	<option value = "price"> Price </option>
 	  	<option value = "name"> Name </option>
 		</select>
 
