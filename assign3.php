@@ -90,6 +90,8 @@ echo '<input type="radio" name="product3" value="';
 			 echo " -- Customer ID: " . $row["customerID"];
 echo "</ul>";
 }
+mysqli_free_result($result);
+mysqli_close($connection);
 ?>
 
 
