@@ -9,3 +9,4 @@
     if (!$productID || !$quantity || !$customerID){
                 echo "<h1> missing information </h1>";
     }
+}
