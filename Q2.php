@@ -3,18 +3,21 @@
   include 'connecttodb.php';
 
   if(isset($_POST["type"]) && isset($_POST["order"])){//if the user chooses, get new ordering
-   $query = "SELECT * FROM Product ORDER BY " . $_POST["type"] . " " . $_POST["order"] ;
+   $query = "SELECT * FROM Product";
    }
+
    $result = mysqli_query($connection,$query);
 
    if (!$result) {
         die("databases query failed.");
     }
+
    echo "</br>So many products</br>";
    echo "<table align='center'>";
    echo "<th>Product Name</th>";
    echo	"<th>Price</th>";			//create a table
    echo	"<th>Quantity Left</th>";
+   
    while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
         echo "<td>" . $row['description'] . " </td>";
