@@ -1,7 +1,7 @@
 <?php
    include 'connecttodb.php';
 
-   if()(isset($_POST["submit"])
+   if((isset($_POST["submit"])
    && (isset($_POST["price"])
    && isset($_POST["ascending"])
   ){//if the user chooses, get new ordering
