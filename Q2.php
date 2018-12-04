@@ -1,6 +1,7 @@
 <?php
 	include 'connecttodb.php';
 
+  if (isset($_POST["submit"])) {
   if(isset($_POST["price"]) && isset($_POST["ascending"])){
    $query = "SELECT * FROM Product ORDER BY " . $_POST["price"] . " " . $_POST["ascending"] ;
    }
@@ -23,4 +24,5 @@
     }
     echo "</table>";
     mysqli_free_result($result);
+  }
  ?>
