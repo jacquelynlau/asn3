@@ -14,9 +14,9 @@
            # Reorder the products with depending on the user's choice
            //$query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["ascdesc"];
 
-           $priceOrder = $_POST ["price"]
-           
-           if ($priceOrder == "ASC") {
+          // $priceOrder = $_POST ["price"]
+           if(isset($_POST['price']) && isset($_POST['ascending'])) {
+        //   if ($priceOrder == "ASC") {
 
            // order price ascending
            $query = "SELECT * FROM Product ORDER BY costPerItem ASC";
