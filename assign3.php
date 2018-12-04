@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- this is like the index file -->
 <html>
 <head>
 	<title> Store Database </title>
@@ -13,14 +14,11 @@
 
 <h1> Assignment 3 Database </h1>
 
-
+</div>
+	<div class ="main">
 </div>
 
-<div class ="main">
-
-</div>
-
-	<!-- Q1 -->
+<!-- Q1 -->
   <form action = "Q1.php" method = "post">
 		<?php
 				include "getcustomers.php";
@@ -28,11 +26,13 @@
 				<input type = "submit" value = "Get Purchases">
   </form>
 
-	<!-- Q2 -->
-	<p> Select how you want to order the product: </p>
+<!-- Q2 -->
+<p> Select how you want to order the product: </p>
 
-	<form action="reorderproducts1.php" method="post">
-
+<form action="Q2.php" method="post">
+	<?php
+		include "reorder.php";
+	?>
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
 	  	<option value = "ASC"> Ascending </option>
