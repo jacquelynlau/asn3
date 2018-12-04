@@ -13,21 +13,11 @@
     <option name = "descending" value = "DESC"> Descending </option>
 </select>
 
-
-
-  <select name="ordering">
-  	<option selected="selected" value="ASC">Ascending</option>//option ascending and descending table
-  	<option value="DESC">Descending</option>
-  </select>
-  <select name="type">
-          <option selected="selected" value="cost">Price</option>// option price or name
-          <option value="description">Name</option>
-  </select>
-
 <!-- organize by price or name button -->
-  <input type = "radio" name = "price" value = "PRICE"> Price </option>
-  <input type = "radio" name = "name" value = "DESC"> Name </option>
-
+<select name = "type">
+    <option name = "price" value = "PRICE"> Price </option>
+    <option name = "name" value = "NAME"> Name </option>
+</select>
 
 
 </html>
