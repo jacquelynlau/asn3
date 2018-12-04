@@ -25,8 +25,13 @@
   }
 
   if ($check4 = 0){
-      //$query = "INSERT INTO Customer(customerID, firstName, lastName, city) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'])";
-      $query = "INSERT INTO Customer (customerID, firstName, lastName, city, phone) VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'] . "', '" . $_POST['phone'] . "')";
+    $customerID = $_POST["customerID"]
+    $customerFName = $_POST["firstname"];
+    $customerLName = $_POST["lastname"];
+    $customerCity = $_POST["city"];
+    $query = "INSERT INTO Customer VALUES ('$customerFName', '$customerLName',
+          '$customerCity', '$customerPhone', '$customerID', '$customerAgent')";
+
       $result = mysqli_query($connection,$query);
 
   if (!$result) {
