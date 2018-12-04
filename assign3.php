@@ -171,9 +171,48 @@ mysqli_close($connection);
 
 
 
-<!-- Q6. delete a customer -->
+<!-- Q6. Delete a customer -->
+<h3> 6. Delete a customer: </h3>
+
+<form action = "Q6.php" method = "post">
+
+<!-- lists the customers with radio button on side -->
+<p> Select the customer: </p>
+
+<?php
+		    include 'connecttodb.php';
+		  	$query = "SELECT * FROM Customer GROUP BY lastName;";
+		  	$result = mysqli_query($connection,$query);
+
+		 	if (!$result) {
+		        	die("databases query failed");
+		 	}
+
+			while ($row = mysqli_fetch_assoc($result)) {
+		    echo "<ul>";
+		    echo '<input type="radio" name="customerdelete" value="';
+		           echo $row["customerID"];
+		           echo '">'. $row["firstName"]. " " .$row["lastName"];
+		           echo " -- Customer ID: " . $row["customerID"];
+		    echo "</ul>";
+			}
+
+mysqli_free_result($result);
+mysqli_close($connection);
+?>
+
+<!-- submit button to delete customer -->
+<input name = "submit6" type = "submit" value = "Delete Customer">
+</form>
+
+
+
+
+
+
 
 <!-- Q7.  -->
+
 
 <!-- Q8.  -->
 
