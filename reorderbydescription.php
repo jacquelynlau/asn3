@@ -1,6 +1,7 @@
 
 <?php
 include 'connecttodb.php';
+include 'assign3.php'; 
 
 if (isset($_POST["submit"])) {
 $query = 'SELECT * FROM Product ORDER BY ' . $_POST["type"] . ' ' . $_POST["description"];
