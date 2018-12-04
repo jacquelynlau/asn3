@@ -31,7 +31,9 @@
 	<p> Select how you want to order the product: </p>
 
 	<form action="reorderbydescription.php" method="post">
-
+		<?php
+			include "reorderbydescription.php";
+		?>
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
 	  	<option selected = "selected" value = "ASC"> Ascending </option>
@@ -48,9 +50,7 @@
 		<input name = "submit" type ="submit" value = "Reorder Table"/>
 	</form>
 
-	<?php
-		include "reorderbydescription.php";
-	?>
+
 
 </body>
 </html>
