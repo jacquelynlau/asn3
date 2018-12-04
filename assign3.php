@@ -61,7 +61,7 @@
 
 			while ($row = mysqli_fetch_assoc($result)) {
 		    echo "<ul>";
-		    echo '<input type="radio" name="customer2" value="';
+		    echo '<input type="radio" name="customer3" value="';
 		           echo $row["customerID"];
 		           echo '">'. $row["firstName"]. " " .$row["lastName"];
 		           echo " -- Customer ID: " . $row["customerID"];
@@ -72,7 +72,26 @@ mysqli_free_result($result);
 mysqli_close($connection);
 ?>
 
-<p> Select the product : </p>
+<p> Select the product: </p>
+
+<?php>
+$query = "SELECT * FROM Product;";
+$result = mysqli_query($connection,$query);
+
+if (!$result) {
+			die("databases query failed");
+}
+
+while ($row = mysqli_fetch_assoc($result)) {
+echo "<ul>";
+echo '<input type="radio" name="product3" value="';
+			 echo $row["productID"];
+			 echo '">'. $row["description"];
+			 echo " -- Customer ID: " . $row["customerID"];
+echo "</ul>";
+}
+?>
+
 
 </form>
 
