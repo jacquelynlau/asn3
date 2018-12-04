@@ -14,17 +14,17 @@ if(isset($_POST['price']) && isset($_POST['ascending'])) {
     }
 
 // order by descending prices
-if(isset($_POST['price']) && isset($_POST['descending'])) {
+else if(isset($_POST['price']) && isset($_POST['descending'])) {
     $query = "SELECT * FROM Product ORDER BY costPerItem DESC";
     }
 
 // order by ascending names
 if(isset($_POST['name']) && isset($_POST['ascending'])) {
-    $query = "SELECT * FROM Product ORDER BY descripion ASC";
+    $query = "SELECT * FROM Product ORDER BY description ASC";
     }
 
 // order by descending names
-if(isset($_POST['name']) && isset($_POST['descending'])) {
+else if(isset($_POST['name']) && isset($_POST['descending'])) {
         $query = "SELECT * FROM Product ORDER BY description DESC";
     }
 
