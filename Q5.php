@@ -1,5 +1,5 @@
 <?php
-   include 'connectdb.php';
+   include 'connecttodb.php';
    $query = "UPDATE Customer SET phoneNumber ='" . $_POST['phonenumber5'] . "' WHERE customerID='" . $_POST['customer5'] . "'";
    $result = mysqli_query($connection,$query);//update the phone number of existing customer
    if (!$result) {
