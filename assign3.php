@@ -34,7 +34,7 @@
 
 		<!-- organize by ascending or descending order button -->
 		<select name = "description">
-	  	<option selected = "selected" value = "ASC"> Ascending </option>
+	  	<option value = "ASC"> Ascending </option>
 	  	<option value = "DESC"> Descending </option>
 		</select>
 
