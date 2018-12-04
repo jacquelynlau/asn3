@@ -7,19 +7,6 @@
 <html>
 <body>
 
-<form action="#" method="post">
-<!-- organize by ascending or descending order button -->
-<select name = "order">
-    <option value = "ASC"> Ascending </option>
-    <option value = "DESC"> Descending </option>
-</select>
-
-<!-- organize by price or name button -->
-<select name = "type">
-    <option value = "PRICE"> Price </option>
-    <option value = "NAME"> Name </option>
-</select>
-
 
 <input name= "reorder" type="submit" value="Show">
 
@@ -27,7 +14,7 @@
 
 <?php
          # If the user pressed "Show"
-         if (isset($_POST["reorder"])) {
+         if (isset($_POST["reorder"]) && (isset($_POST["ascending"]) && (isset($_POST["price"])   ) {
            # Reorder the products with depending on the user's choice
            //$query = 'SELECT * FROM Product ORDER BY ' . $_POST["order"] . ' ' . $_POST["ascdesc"];
            $query = "SELECT * FROM Product ORDER BY costPerItem ASC";
