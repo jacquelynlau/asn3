@@ -3,7 +3,7 @@
 include 'connecttodb.php';
 
 if (isset($_POST["submit"])) {
-$query = 'SELECT * FROM Product ORDER BY ' . $_POST["type"] . ' ' . $_POST["description"];
+$query = 'SELECT * FROM Product ORDER BY ' . $_POST["description"] . ' ' . $_POST["type"];
 
 $result = mysqli_query($connection, $query);
             if (!$result) {
