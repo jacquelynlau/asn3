@@ -16,7 +16,7 @@
 
   //show list of products that have not been purchased
   while ($row = mysqli_fetch_assoc($result)) {
-            echo '<li>' . 'Product ID: ' . $row["productID"] . ', Name: ' .$row["description"];
+            echo '<li>'. $row["description"];
   }
 
   mysqli_close($connection);
