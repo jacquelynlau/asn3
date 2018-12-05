@@ -10,6 +10,8 @@
 <ol>
 	<?php
 		$whichCustomer = $_POST["customer"];
+
+		//get purchases and print them
 		$query = 'SELECT * FROM Product JOIN Purchases ON Product.productID = Purchases.productID AND Purchases.customerID = "'.$whichCustomer.'"';
 		$result = mysqli_query($connection,$query);
 		while ($row=mysqli_fetch_assoc($result)) {
@@ -18,6 +20,7 @@
 			echo '</p>';
 		}
 
+		//if unsuccessful, trigger error message
 		if (!$result) {
 			die("database query failed");
 		}
