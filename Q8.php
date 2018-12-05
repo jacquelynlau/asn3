@@ -2,7 +2,7 @@
 <html>
 <body>
 
-"<h1> Products that have not been purchased: </h1>"
+<h1> Products that have not been purchased: </h1>
 
 <?php
   include 'connecttodb.php';
