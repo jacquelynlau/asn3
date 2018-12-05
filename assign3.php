@@ -228,7 +228,34 @@ mysqli_close($connection);
 </form>
 
 <!-- Q9. List total number of purchases for a particular product -->
-<h3> 9. List the total number of purchases for a particular product: </h3> 
+<h3> 9. List the total number of purchases for a particular product: </h3>
+
+<form action = "Q9.php" method = "post">
+
+	<p> Select the product: </p>
+	<?php
+			    include 'connecttodb.php';
+			  	$query = "SELECT * FROM Product;";
+			  	$result = mysqli_query($connection,$query);
+
+			 	if (!$result) {
+			        	die("databases query failed");
+			 	}
+
+				while ($row = mysqli_fetch_assoc($result)) {
+			    echo "<ul>";
+			    echo '<input type="radio" name="product3" value="';
+			           echo $row["productID"];
+			           echo '">'. $row["description"];
+			           echo " -- Product ID: " . $row["productID"];
+			    echo "</ul>";
+				}
+
+	mysqli_free_result($result);
+	mysqli_close($connection);
+	?>
+</form>
+
 
 
 </body>
