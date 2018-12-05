@@ -1,10 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+<body>
 
 <?php
 
   //not done :(
 
-  
+
   include 'connecttodb.php';
 
   if (isset($_POST["submit"])) {
@@ -18,3 +20,10 @@
     }
 
      ?>
+     
+<br>
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
+
+</body>
+</html>
