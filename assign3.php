@@ -244,7 +244,7 @@ mysqli_close($connection);
 
 				while ($row = mysqli_fetch_assoc($result)) {
 			    echo "<ul>";
-			    echo '<input type="radio" name="product3" value="';
+			    echo '<input type="radio" name="product9" value="';
 			           echo $row["productID"];
 			           echo '">'. $row["description"];
 			           echo " -- Product ID: " . $row["productID"];
@@ -254,6 +254,10 @@ mysqli_close($connection);
 	mysqli_free_result($result);
 	mysqli_close($connection);
 	?>
+
+	<!-- submit button to get list -->
+	<input name = "submit9" type = "submit" value = "Submit">
+
 </form>
 
 
