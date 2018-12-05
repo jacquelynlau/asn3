@@ -32,9 +32,13 @@
     $query = "INSERT INTO Customer (customerID, firstName, lastName, city, phoneNumber)
     VALUES('" . $_POST['customerID'] . "' , '" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['city'] . "', '" . $_POST['phonenumber'] . "')";
     $result = mysqli_query($connection,$query);
+
+		//if unsuccessful, trigger error message
     if (!$result) {
         die("databases query failed.");
     }
+
+		//if successful, trigger success message
     else {
         echo "<h1> Customer successfully added! </h1>";
     }
