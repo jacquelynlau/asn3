@@ -2,6 +2,8 @@
 <html>
 <body>
 
+"<h1> Products that have not been purchased: </h1>"
+
 <?php
   include 'connecttodb.php';
 
@@ -25,7 +27,7 @@
 
 <!-- go home link -->
 <br>
-<br> 
+<br>
 <a href="assign3.php">Go Home</a>
 
 </body>
