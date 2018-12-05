@@ -18,7 +18,7 @@ $whichProduct = $_POST["product9"];
 
 $row = mysqli_fetch_assoc($result);
                      echo '<p>total quantity of products purchased ';
-                     echo $row["SUM(quantityPurchased)"];
+                     echo $row["SUM(quantity)"];
                      echo '</p>';
 
 
