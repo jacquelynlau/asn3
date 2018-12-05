@@ -227,5 +227,9 @@ mysqli_close($connection);
 		<input name = "submit8" type = "submit" value = "Go to list!">
 </form>
 
+<!-- Q9. List total number of purchases for a particular product -->
+<h3> 9. List the total number of purchases for a particular product: </h3> 
+
+
 </body>
 </html>
