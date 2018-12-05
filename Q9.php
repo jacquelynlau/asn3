@@ -6,8 +6,8 @@
 
 <?php
    include 'connecttodb.php';
-   
-   $query = "SELECT description, cost, SUM(PurchaseS.quantity) as sales FROM Purchases JOIN Product ON Purchases.productID=Product.productID WHERE Purchases.productID='" . $_POST["prod"] ."'";
+
+   $query = "SELECT description, cost, SUM(Purchases.quantityPurchased) as sales FROM Purchases JOIN Product ON Purchases.productID=Product.productID WHERE Purchases.productID='" . $_POST["prod"] ."'";
    $result = mysqli_query($connection,$query);
    if (!$result) {
         die("databases query failed.");
