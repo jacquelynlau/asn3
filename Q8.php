@@ -16,22 +16,15 @@
 
   //show list of products that have not been purchased
   while ($row = mysqli_fetch_assoc($result)) {
-  //          echo '<li>'. $row["description"].',  $row["productID"]';
-
-
-//            {
-            echo '<li>' . $row["description"] . ' -- Product ID: ' . $row["productID"];
-        }
-
-
+          echo '<li>' . $row["description"] . ' -- Product ID: ' . $row["productID"];
+  }
 
   mysqli_close($connection);
 
 ?>
 
-
-
-
+<!-- go home link -->
+<a href="assign3.php">Go Home</a>
 
 </body>
 </html>
