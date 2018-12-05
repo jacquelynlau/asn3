@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Customers that have bought more than the specified quantity: </h1>
+
 <?php
 
     include 'connecttodb.php';
@@ -21,10 +27,18 @@
     //prints out the list
     echo "<ul>";
           while ($row = mysqli_fetch_assoc($result)) {
-            echo '<li>' . $row["firstName"] . ' ' . $row["lastName"] . ' -- ' . $row["description"] . '. Amount: ' . $row["quantity"] . '</li>';
+            echo '<li>' . $row["firstName"] . ' ' . $row["lastName"] . ' -- ' . $row["description"] . ' -- amount purchased: ' . $row["quantity"] . '</li>';
           }
     echo "</ul>";
 
    mysqli_free_result($result);
    mysqli_close($connection);
 ?>
+
+<!-- go home link -->
+<br>
+<br>
+<a href="assign3.php">Go Home</a>
+
+</body>
+</html>
