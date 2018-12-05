@@ -5,7 +5,8 @@
 <h1> Total number of purchases for a particular product: </h1>
 
 <?php
-   include 'connectdb.php';
+   include 'connecttodb.php';
+   
    $query = "SELECT description, cost, SUM(PurchaseS.quantity) as sales FROM Purchases JOIN Product ON Purchases.productID=Product.productID WHERE Purchases.productID='" . $_POST["prod"] ."'";
    $result = mysqli_query($connection,$query);
    if (!$result) {
