@@ -8,6 +8,7 @@
 
     include 'connecttodb.php';
 
+    //quantity variable
     $quantity = $_POST["quantity"];
 
     //get the integer value of a variab
@@ -15,7 +16,7 @@
 
     //get customer and product description that is over the specific quantity entered
     $query = 'SELECT firstName, lastName, description, quantity FROM Purchases INNER JOIN Product ON Product.productID=Purchases.productID INNER JOIN Customer ON
-    Customer.customerID=Purchases.customerID WHERE quantity>=' . $amount;
+    Customer.customerID=Purchases.customerID WHERE quantity>' . $amount;
 
     $result = mysqli_query($connection, $query);
 
@@ -36,7 +37,6 @@
 ?>
 
 <!-- go home link -->
-<br>
 <br>
 <a href="assign3.php">Go Home</a>
 
