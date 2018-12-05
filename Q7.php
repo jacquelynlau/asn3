@@ -1,5 +1,7 @@
 <?php
 
+      include 'connecttodb.php';
+
         if (isset($_POST["submit7"])) {
           # Put it in variables
           $quantity = $_POST["quantity"];
