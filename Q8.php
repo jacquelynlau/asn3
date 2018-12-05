@@ -20,10 +20,10 @@
 
 
 //            {
-            echo '<li>' . $row["description"] . ', ID: ' . $row["productID"];
+            echo '<li>' . $row["description"] . ', -- Product ID: ' . $row["productID"];
         }
 
-  
+
 
   mysqli_close($connection);
 
