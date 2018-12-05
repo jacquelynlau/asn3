@@ -20,7 +20,7 @@
 
 
 //            {
-            echo '<li>' . $row["description"] . ', -- Product ID: ' . $row["productID"];
+            echo '<li>' . $row["description"] . ' -- Product ID: ' . $row["productID"];
         }
 
 
