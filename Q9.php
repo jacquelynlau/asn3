@@ -10,11 +10,6 @@
 $whichProduct = $_POST["product9"];
 
 
- $query = 'SELECT SUM(quantityPurchased) as total FROM Purchase WHERE productID=' . $whichProduct . ' GROUP BY productID';
- //$query = 'SELECT SUM(quantity) FROM CustomerPurchases WHERE Purchases.productID = (SELECT Product.productID FROM Product WHERE Product.description="' . $whichProduct . '")';
- $result = mysqli_query($connection, $query);
- $amount = mysqli_fetch_assoc($result);
-
  echo $amount["total"];
 
  if (!$result) {
