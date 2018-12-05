@@ -2,18 +2,16 @@
 
     include 'connecttodb.php';
 
-        if (isset($_POST["submit7"])) {
+    $quantity = $_POST["quantity"];
 
-
-
-          $quantity = $_POST["quantity"];
         //  $amount = intval($quantity);
 
           # Query to get the customer and product description
           $query = 'SELECT firstName, lastName, description, quantity FROM Purchases INNER JOIN Product ON Product.productID=Purchases.productID INNER JOIN Customer ON
           Customer.customerID=Purchases.customerID WHERE quantity>=' . $amount;
+
           $result = mysqli_query($connection, $query);
-          # Check if it worked
+          
           if (!$result) {
               die("databases query failed.");
           }
@@ -25,8 +23,8 @@
           }
           echo "</ul>";
           mysqli_free_result($result);
-        }
 
-        
+
+
         mysqli_close($connection);
       ?>
