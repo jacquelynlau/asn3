@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <?php
 // order by ascending prices
 if(isset($_POST['price']) && isset($_POST['ascending'])) {
