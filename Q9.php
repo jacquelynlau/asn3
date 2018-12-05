@@ -8,7 +8,7 @@
 
 //get total number of purchases for that product selected
 $whichProduct = $_POST["product9"];
- $query = 'SELECT SUM(quantityPurchased) FROM CustomerPurchases WHERE Purchases.productID = (SELECT Product.productID FROM Product WHERE Product.description="' . $whichProduct . '")';
+ $query = 'SELECT SUM(quantity) FROM CustomerPurchases WHERE Purchases.productID = (SELECT Product.productID FROM Product WHERE Product.description="' . $whichProduct . '")';
 
  $result = mysqli_query($connection,$query);
 
