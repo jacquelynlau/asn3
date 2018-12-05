@@ -9,6 +9,7 @@
 
 	echo "<h3> 1. Select the customer you are looking up: </h3>";
 
+
 	while ($row = mysqli_fetch_assoc($result)) {
     echo "<ul>";
     echo '<input type="radio" name="customer" value="';
