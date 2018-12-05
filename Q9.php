@@ -6,14 +6,33 @@
 
 <?php
 
-$whichProduct = $_POST["product9"];
-
-echo $whichProduct;
-
-
 //get total number of purchases for that product selected
-   mysqli_free_result($result);
-   mysqli_close($connection);
+$whichProduct = $_POST["product9"];
+ $query = 'SELECT SUM(quantityPurchased) FROM CustomerPurchases WHERE CustomerPurchases.productID = (SELECT Product.productID FROM Product WHERE Product.description="' . $whichProduct . '")';
+ $result = mysqli_query($connection,$query);
+
+ if (!$result) {
+                die("databases query failed.");
+            }
+
+$row = mysqli_fetch_assoc($result);
+                     echo '<p>total quantity of products purchased ';
+                     echo $row["SUM(quantityPurchased)"];
+                     echo '</p>';
+                     
+
+
+
+
+
+
+
+
+mysqli_free_result($result);
+
+
+
+mysqli_close($connection);
 
 
 
