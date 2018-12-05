@@ -21,7 +21,7 @@
     //prints out the list
     echo "<ul>";
           while ($row = mysqli_fetch_assoc($result)) {
-            echo '<li><b>' . $row["firstName"] . ' ' . $row["lastName"] . '</b> Purchased <b>' . $row["description"] . '</b>. Amount: <b>' . $row["quantity"] . '</b></li>';
+            echo '<li>' . $row["firstName"] . ' ' . $row["lastName"] . ' -- ' . $row["description"] . '. Amount: ' . $row["quantity"] . '</li>';
           }
     echo "</ul>";
 
